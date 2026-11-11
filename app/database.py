@@ -243,6 +243,114 @@ def init_db():
         )
     """)
 
+    # LLM-DOD-03: Document Classification Records
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS document_classifications (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            document_id INTEGER,
+            filename TEXT UNIQUE NOT NULL,
+            doc_category TEXT NOT NULL,
+            confidence REAL NOT NULL DEFAULT 1.0,
+            evidence_json TEXT,
+            is_uncertain BOOLEAN NOT NULL DEFAULT 0,
+            reasoning TEXT,
+            classified_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+
+    # LLM-DOD-04: Multi-Page and Sheet Processing Records
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS page_processing_records (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            document_id INTEGER,
+            filename TEXT NOT NULL,
+            page_index INTEGER NOT NULL,
+            page_number INTEGER NOT NULL,
+            sheet_number TEXT,
+            sheet_title TEXT,
+            page_category TEXT,
+            status TEXT NOT NULL DEFAULT 'SUCCESS',
+            tables_detected INTEGER NOT NULL DEFAULT 0,
+            error_message TEXT,
+            notes TEXT,
+            processed_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(filename, page_number)
+        )
+    """)
+
+    # LLM-DOD-04: Extracted Tables Registry
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS extracted_tables_registry (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            document_id INTEGER,
+            filename TEXT NOT NULL,
+            page_number INTEGER NOT NULL,
+            table_name TEXT NOT NULL,
+            table_type TEXT NOT NULL,
+            headers_json TEXT,
+            row_count INTEGER NOT NULL DEFAULT 0,
+            col_count INTEGER NOT NULL DEFAULT 0,
+            bbox_json TEXT,
+            status TEXT NOT NULL DEFAULT 'READY',
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+
+    # LLM-DOD-05: Drawing Revision and Metadata Identification
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS drawing_metadata (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            document_id INTEGER,
+            filename TEXT UNIQUE NOT NULL,
+            drawing_number TEXT,
+            drawing_title TEXT,
+            revision TEXT,
+            revision_date TEXT,
+            scale TEXT,
+            structure_id TEXT,
+            project_name TEXT,
+            client_name TEXT,
+            source_reference TEXT,
+            extracted_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+
+    # LLM-DOD-06: Engineering Document Relationships & Traceability
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS document_relationships (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            source_doc TEXT NOT NULL,
+            target_doc TEXT NOT NULL,
+            relationship_type TEXT NOT NULL,
+            reference_text TEXT,
+            structure_id TEXT,
+            element_id TEXT,
+            is_ambiguous BOOLEAN NOT NULL DEFAULT 0,
+            confidence REAL NOT NULL DEFAULT 1.0,
+            notes TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+
+    # Migration: add metadata and category columns to documents table if missing
+    cursor.execute("PRAGMA table_info(documents)")
+    doc_cols = [r[1] for r in cursor.fetchall()]
+    new_doc_cols = [
+        ("doc_category", "TEXT"),
+        ("drawing_number", "TEXT"),
+        ("revision", "TEXT"),
+        ("drawing_date", "TEXT"),
+        ("structure_id", "TEXT"),
+        ("classification_confidence", "REAL"),
+        ("classification_evidence", "TEXT")
+    ]
+    for c_name, c_type in new_doc_cols:
+        if c_name not in doc_cols:
+            try:
+                cursor.execute(f"ALTER TABLE documents ADD COLUMN {c_name} {c_type}")
+            except Exception:
+                pass
+
     conn.commit()
     conn.close()
 

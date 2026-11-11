@@ -22,6 +22,11 @@ It converts complex 2D multi-sheet engineering drawings (General Arrangement Dra
 - [Web Interface & Navigation](#-web-interface--navigation)
 - [Master Deliverables](#-master-deliverables)
 - [Document Integrity & Validation (LLM-DOD-02)](#-document-integrity--validation-llm-dod-02)
+- [Engineering Document Governance (LLM-DOD-03 to 06)](#-engineering-document-governance-llm-dod-03-to-06)
+  - [LLM-DOD-03: Document Classification](#llm-dod-03-engineering-document-classification)
+  - [LLM-DOD-04: Multi-Page & Sheet Processing](#llm-dod-04-multi-page-and-drawing-sheet-processing)
+  - [LLM-DOD-05: Revision & Metadata Tracking](#llm-dod-05-drawing-revision-and-metadata-identification)
+  - [LLM-DOD-06: Document Relationship Management](#llm-dod-06-engineering-document-relationship-management)
 - [REST API Reference](#-rest-api-reference)
 - [Automated Testing](#-automated-testing)
 - [Project Directory Structure](#-project-directory-structure)
@@ -204,15 +209,57 @@ The system enforces automated pre-processing validation on all uploaded files:
 
 ---
 
+## 📐 Engineering Document Governance (LLM-DOD-03 to 06)
+
+### LLM-DOD-03: Engineering Document Classification
+Automatically identifies and categorizes civil engineering documents to route each file into its optimal extraction pipeline:
+- **US-LLM-009 (GAD Identification)**: Recognizes General Arrangement Drawings (GAD) containing elevation views, span arrangements, and bridge general layout plans.
+- **US-LLM-010 (MCW Plan & Profile)**: Identifies Main Carriageway alignment, profile curves, chainages (e.g. `CH: 54+281`), VIP/HIP tangent points, and finished road levels.
+- **US-LLM-011 (Foundation Layout & Structural Drawings)**: Distinguishes footing coordinate schedules, pile group layouts, pier shaft geometry, pier cap details, and reinforcement sections.
+- **US-LLM-012 (Cross-Sections & Uncertainty Flagging)**: Identifies cross-sections (camber slopes, deck slabs, wearing course) and flags ambiguous/unrecognized drawings with status `UNCERTAIN` for engineer sign-off.
+- **Official Deliverable**: **Classification test report** (`GET /api/governance/classification-report`), viewable in the Web UI via the **🏷️ Classification** button.
+
+### LLM-DOD-04: Multi-Page and Drawing Sheet Processing
+Ensures no drawings, tables, or sheets are omitted or silently skipped:
+- **US-LLM-013 (Every Page Tracked)**: Logs page-by-page processing status (`SUCCESS`, `FAILED`, `SKIPPED`, `NEEDS_REVIEW`) across all multi-page PDFs.
+- **US-LLM-014 (Engineering Table Identification)**: Identifies coordinate schedules, borehole logs, chainage/level tables, and dimension schedules.
+- **US-LLM-015 (Multi-Sheet Drawing Sets)**: Extracts sheet numbers (`Sheet 01 of 10`), sheet titles, and contributes data across the complete set.
+- **US-LLM-016 (Failure & Skip Reporting)**: Explicitly surfaces failed or omitted pages with actionable diagnostic reasons.
+- **Official Deliverable**: **Page-level processing report** (`GET /api/governance/page-processing-report`), viewable in the Web UI via the **📑 Sheet Process** button.
+
+### LLM-DOD-05: Drawing Revision and Metadata Identification
+Extracts title block metadata to prevent version collisions and track engineering revisions:
+- **US-LLM-017 (Drawing Number & Title Extraction)**: Extracts official drawing numbers (e.g. `O24087-C-RP-MB-GA-8330`), titles, scales, and client information.
+- **US-LLM-018 (Strict Revision Extraction Without Inference)**: Revision codes (e.g. `RC`, `REV.C`, `R1.0`) are captured strictly from drawing title blocks; when absent, revision is recorded as `None` and never silently guessed or assumed.
+- **US-LLM-019 (Drawing Dates Linked to Source)**: Captures recorded revision/plot dates with explicit sheet and file references.
+- **US-LLM-020 (Superseding Version Distinction)**: Distinguishes drawing revisions to alert engineers of updated revisions.
+- **Official Deliverable**: **Drawing metadata comparison** (`GET /api/governance/metadata-comparison`), viewable in the Web UI via the **🔍 Revisions** button.
+
+### LLM-DOD-06: Engineering Document Relationship Management
+Discovers, maps, and validates multi-file relationships across the project repository:
+- **US-LLM-021 (Drawing Cross-References)**: Discovers explicit drawing cross-references (`THIS DRAWING SHALL BE READ IN CONJUNCTION WITH DRAWING NO. ...`).
+- **US-LLM-022 (Structure ID Grouping)**: Groups drawings by civil structure asset ID (e.g. `FLYOVER-INTERCHANGE-CH54+281`).
+- **US-LLM-023 (Common Element Linking & Ambiguity Flagging)**: Links shared structural entities (piers, footings, boreholes, sections); flags excluded elements (such as omitted piers `P3` and `P11`) as `is_ambiguous = True` for engineering review.
+- **US-LLM-024 (Element Provenance & Traceability)**: Full backwards provenance tracing for any structural element back to its exact source drawings, sheets, and coordinates.
+- **Official Deliverable**: **Document relationship records** (`GET /api/governance/relationship-records`) and **Trace Provenance** (`GET /api/governance/trace/{element_id}`), accessible via the **🔗 Relationships** and **🔗 Trace** buttons in the web UI.
+
+---
+
 ## 🔌 REST API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
 | `POST` | `/api/upload/files` | Upload and validate engineering files. |
 | `POST` | `/api/upload/load-existing` | Scan workspace `input/` folder and register valid files. |
-| `GET` | `/api/upload/list` | List all registered documents with integrity status. |
+| `GET` | `/api/upload/list` | List all registered documents with integrity and category badges. |
 | `GET` | `/api/upload/validation-logs` | Fetch file validation audit trail (LLM-DOD-02). |
 | `GET` | `/api/upload/validation-summary` | Summary metrics of file validation status. |
+| `GET` | `/api/governance/classification-report` | Classification test report (LLM-DOD-03). |
+| `GET` | `/api/governance/page-processing-report` | Page-level processing report (LLM-DOD-04). |
+| `GET` | `/api/governance/metadata-comparison` | Drawing metadata comparison report (LLM-DOD-05). |
+| `GET` | `/api/governance/relationship-records` | Document relationship records report (LLM-DOD-06). |
+| `GET` | `/api/governance/trace/{element_id}` | Trace element origin provenance back to source sheets. |
+| `POST` | `/api/governance/run-all` | Run all classification, sheet processing, metadata & relationship stages. |
 | `POST` | `/api/pipeline/run` | Launch full autonomous extraction pipeline in background. |
 | `GET` | `/api/pipeline/status` | Real-time status, progress percentage, and log messages. |
 | `GET` | `/api/results/piers` | Retrieve master pier list with 3D coordinates and dimensions. |
@@ -231,19 +278,32 @@ The system enforces automated pre-processing validation on all uploaded files:
 
 ## 🧪 Automated Testing
 
-The platform includes a test suite covering database operations, geodetic transformations, spatial arithmetic, structural AI rules, normalisation, deduplication, and document integrity validation:
+The platform includes a test suite covering database operations, geodetic transformations, spatial arithmetic, structural AI rules, normalisation, deduplication, document integrity validation, document classification, multi-page sheet tracking, metadata revision comparison, and document relationship management:
 
 Run the full test suite:
 ```bash
 py -3.11 -m pytest -v
 ```
 
-Run specific validation suite (LLM-DOD-02):
+Run specific Definition of Done suites:
 ```bash
+# LLM-DOD-02: Document Integrity and Format Validation
 py -3.11 -m pytest tests/test_document_validation.py -v
+
+# LLM-DOD-03: Engineering Document Classification
+py -3.11 -m pytest tests/test_document_classification.py -v
+
+# LLM-DOD-04: Multi-Page and Drawing Sheet Processing
+py -3.11 -m pytest tests/test_multi_page_processing.py -v
+
+# LLM-DOD-05: Drawing Revision and Metadata Identification
+py -3.11 -m pytest tests/test_metadata_revisions.py -v
+
+# LLM-DOD-06: Engineering Document Relationship Management
+py -3.11 -m pytest tests/test_relationship_management.py -v
 ```
 
-All 28 automated tests execute in under 8 seconds with zero failures.
+**All 49 automated tests execute with 100% pass rate** across all DoD criteria.
 
 ---
 
@@ -252,38 +312,43 @@ All 28 automated tests execute in under 8 seconds with zero failures.
 ```text
 E:\KC.IRL\LLM\
 ├── app/
-│   ├── config.py                 # Paths, coordinate bounds, CRS definitions
-│   ├── database.py               # SQLite schema, WAL mode, migrations, logging
-│   ├── models.py                 # Pydantic schema validation models
-│   ├── main.py                   # FastAPI application, static mounts, CORS
+│   ├── config.py                     # Paths, coordinate bounds, CRS definitions
+│   ├── database.py                   # SQLite schema, WAL mode, migrations, logging
+│   ├── models.py                     # Pydantic schema validation models
+│   ├── main.py                       # FastAPI application, static mounts, CORS
 │   ├── pipeline/
-│   │   ├── file_validator.py     # Document integrity & encryption engine (LLM-DOD-02)
-│   │   ├── ingest.py             # PDF rendering and page classification
-│   │   ├── extract_tables.py     # PDF vector coordinate table extractor
-│   │   ├── extract_text.py       # Drawing notes, excluded piers (P3 & P11), SCPs
-│   │   ├── normalise.py          # Standardisation of IDs, carriageways, and sections
-│   │   ├── crs_handler.py        # pyproj UTM 44N to Lat/Lon transformations
-│   │   ├── compute.py            # Centroid arithmetic, distances, skew azimuths
-│   │   ├── validate.py           # Plausible coordinate checks & cluster bounds
-│   │   ├── merge.py              # Cross-PDF duplicate and conflict resolution
-│   │   └── orchestrator.py       # Full extraction pipeline runner
+│   │   ├── file_validator.py         # Document integrity & encryption engine (LLM-DOD-02)
+│   │   ├── document_classifier.py    # Document & sheet classifier (LLM-DOD-03)
+│   │   ├── sheet_processor.py        # Multi-page & table tracking engine (LLM-DOD-04)
+│   │   ├── metadata_extractor.py     # Drawing number, revision, date extractor (LLM-DOD-05)
+│   │   ├── relationship_manager.py   # Cross-drawing reference & link manager (LLM-DOD-06)
+│   │   ├── ingest.py                 # PDF rendering and page classification
+│   │   ├── extract_tables.py         # PDF vector coordinate table extractor
+│   │   ├── extract_text.py           # Drawing notes, excluded piers (P3 & P11), SCPs
+│   │   ├── normalise.py              # Standardisation of IDs, carriageways, and sections
+│   │   ├── crs_handler.py            # pyproj UTM 44N to Lat/Lon transformations
+│   │   ├── compute.py                # Centroid arithmetic, distances, skew azimuths
+│   │   ├── validate.py               # Plausible coordinate checks & cluster bounds
+│   │   ├── merge.py                  # Cross-PDF duplicate and conflict resolution
+│   │   └── orchestrator.py           # Full extraction pipeline runner
 │   ├── export/
-│   │   ├── excel_writer.py       # 7-sheet openpyxl master BIM workbook builder
-│   │   └── csv_writer.py         # CSV exporter for CAD/GIS interoperability
+│   │   ├── excel_writer.py           # 7-sheet openpyxl master BIM workbook builder
+│   │   └── csv_writer.py             # CSV exporter for CAD/GIS interoperability
 │   ├── routers/
-│   │   ├── upload.py             # File upload, scanner, and validation endpoints
-│   │   ├── pipeline.py           # Pipeline triggers, progress polling, session resets
-│   │   ├── results.py            # Data catalog endpoints (piers, points, deck, geo)
-│   │   ├── export.py             # File download endpoints
-│   │   └── crs.py                # Geodetic CRS configuration endpoints
-│   └── static/                   # Production Web UI
-│       ├── index.html            # Single-page interface with inlined production CSS
-│       ├── css/styles.css        # Precision Slate & Cobalt Navy design system
-│       └── js/app.js             # Client controller, top-tab sync, audit modals
-├── input/                        # Input directory for drawings and datasets
-├── output/                       # Output deliverables (.xlsx, .csv)
-├── page_images/                  # Rendered 150 DPI page PNGs
-├── tests/                        # Automated Pytest suite (28 tests)
+│   │   ├── upload.py                 # File upload, scanner, and validation endpoints
+│   │   ├── governance.py             # Governance reports (DOD-03..06) & provenance trace
+│   │   ├── pipeline.py               # Pipeline triggers, progress polling, session resets
+│   │   ├── results.py                # Data catalog endpoints (piers, points, deck, geo)
+│   │   ├── export.py                 # File download endpoints
+│   │   └── crs.py                    # Geodetic CRS configuration endpoints
+│   └── static/                       # Production Web UI
+│       ├── index.html                # Single-page interface with inlined production CSS
+│       ├── css/styles.css            # Precision Slate & Cobalt Navy design system
+│       └── js/app.js                 # Client controller, top-tab sync, audit & report modals
+├── input/                            # Input directory for drawings and datasets
+├── output/                           # Output deliverables (.xlsx, .csv)
+├── page_images/                      # Rendered 150 DPI page PNGs
+├── tests/                            # Automated Pytest suite (49 tests)
 │   ├── test_infra.py
 │   ├── test_crs.py
 │   ├── test_compute.py
@@ -291,7 +356,17 @@ E:\KC.IRL\LLM\
 │   ├── test_normalise.py
 │   ├── test_validate.py
 │   ├── test_merge.py
-│   └── test_document_validation.py
+│   ├── test_document_validation.py    # LLM-DOD-02 test suite (7 tests)
+│   ├── test_document_classification.py# LLM-DOD-03 test suite (5 tests)
+│   ├── test_multi_page_processing.py  # LLM-DOD-04 test suite (5 tests)
+│   ├── test_metadata_revisions.py     # LLM-DOD-05 test suite (5 tests)
+│   └── test_relationship_management.py# LLM-DOD-06 test suite (5 tests)
+├── .gitignore                        # Git ignore specifications
+├── PLAN.md                           # Comprehensive technical specification & roadmap
+├── requirements.txt                  # Production Python dependencies
+├── setup.bat                         # Windows automated setup script
+└── run.bat                           # Windows server launch script
+```
 ├── .gitignore                    # Git ignore specifications
 ├── PLAN.md                       # Comprehensive technical specification & roadmap
 ├── requirements.txt              # Production Python dependencies

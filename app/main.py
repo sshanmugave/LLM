@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import BASE_DIR, PAGE_IMAGES_DIR, INPUT_DIR
 from app.database import init_db, clear_extracted_data
-from app.routers import upload, pipeline, results, export, crs
+from app.routers import upload, pipeline, results, export, crs, governance
 
 app = FastAPI(
     title="Flyover Pier Coordinate Extractor",
@@ -42,6 +42,7 @@ app.include_router(pipeline.router, prefix="/api/pipeline", tags=["Pipeline"])
 app.include_router(results.router, prefix="/api/results", tags=["Results"])
 app.include_router(crs.router, prefix="/api/crs", tags=["CRS"])
 app.include_router(export.router, prefix="/api/export", tags=["Export"])
+app.include_router(governance.router, prefix="/api/governance", tags=["Engineering Governance"])
 
 @app.on_event("startup")
 def on_startup():

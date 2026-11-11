@@ -65,3 +65,6 @@ desktop.ini
 *.tmp
 *.bak
 scratch/
+input/corrupt_*
+input/test_*
+

@@ -10,6 +10,10 @@ from fastapi import APIRouter, UploadFile, File, HTTPException
 from app.config import INPUT_DIR
 from app.database import get_connection, log_event
 from app.pipeline.file_validator import validate_document, log_document_validation, DocumentValidationResult
+from app.pipeline.document_classifier import classify_engineering_document, store_classification_result
+from app.pipeline.sheet_processor import process_document_sheets
+from app.pipeline.metadata_extractor import extract_drawing_metadata
+from app.pipeline.relationship_manager import build_all_document_relationships
 
 router = APIRouter()
 
@@ -98,7 +102,8 @@ def list_available_files():
     """List all ingested documents (PDF, Excel, JSON) with their metadata and validation status."""
     conn = get_connection()
     rows = conn.execute("""
-        SELECT id, filename, file_type, file_size_bytes, status, is_valid, error_message, meta_json, uploaded_at
+        SELECT id, filename, file_type, file_size_bytes, status, is_valid, error_message,
+               doc_category, drawing_number, revision, drawing_date, structure_id, meta_json, uploaded_at
         FROM documents ORDER BY uploaded_at DESC
     """).fetchall()
     conn.close()
@@ -195,10 +200,17 @@ async def upload_files(files: List[UploadFile] = File(...)):
             if file_type == "pdf":
                 _register_pdf_legacy(conn, file.filename, str(dest_path), file_hash)
 
+            # Governance classification, sheet processing, and metadata extraction (LLM-DOD-03..05)
+            c_res = classify_engineering_document(dest_path)
+            store_classification_result(c_res)
+            if file_type == "pdf":
+                process_document_sheets(dest_path)
+            extract_drawing_metadata(dest_path)
+
             row = conn.execute("SELECT id FROM documents WHERE filename = ?", (file.filename,)).fetchone()
             doc_id = row["id"] if row else None
 
-            log_event("INFO", "UPLOAD", f"Uploaded and verified {file_type.upper()} file: {file.filename}", filename=file.filename)
+            log_event("INFO", "UPLOAD", f"Uploaded and verified {file_type.upper()} file: {file.filename} [{c_res.doc_category}]", filename=file.filename)
 
             saved.append({
                 "document_id": doc_id,
@@ -207,10 +219,14 @@ async def upload_files(files: List[UploadFile] = File(...)):
                 "size_bytes":  file_size,
                 "status":      "registered",
                 "is_valid":    True,
+                "doc_category": c_res.doc_category,
                 "meta":        meta,
             })
 
     conn.close()
+
+    if saved:
+        build_all_document_relationships()
     return {
         "status":   "success" if saved else ("failed" if failed else "no_valid_files"),
         "uploaded": saved,
@@ -260,7 +276,20 @@ def load_existing_files():
             if val_res.is_valid:
                 if file_type == "pdf":
                     _register_pdf_legacy(conn, f, str(path), file_hash)
-                registered.append({"filename": f, "file_type": file_type, "status": "registered"})
+                
+                # Execute engineering governance pipeline (LLM-DOD-03 to LLM-DOD-05)
+                c_res = classify_engineering_document(path)
+                store_classification_result(c_res)
+                if file_type == "pdf":
+                    process_document_sheets(path)
+                extract_drawing_metadata(path)
+
+                registered.append({
+                    "filename": f,
+                    "file_type": file_type,
+                    "status": "registered",
+                    "doc_category": c_res.doc_category
+                })
             else:
                 failed.append({
                     "filename": f,
@@ -271,6 +300,10 @@ def load_existing_files():
                 })
 
     conn.close()
+
+    # Rebuild relationships across all registered documents (LLM-DOD-06)
+    if registered:
+        build_all_document_relationships()
     return {
         "status": "success",
         "registered": registered,

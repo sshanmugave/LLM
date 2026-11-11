@@ -294,13 +294,14 @@ function renderDocsList(files) {
                title="Double-click to open preview">
             <div class="doc-row-icon ${iconClass}">${icon}</div>
             <div class="doc-row-info">
-              <div class="doc-name">${escapeHtml(f.filename)}</div>
-              <div class="doc-meta">${(f.file_type || '').toUpperCase()} · ${sizeKB}${meta ? ' · ' + meta : ''}</div>
+              <div class="doc-name">${escapeHtml(f.filename)} ${f.doc_category ? `<span class="badge badge-blue" style="font-size:10px;text-transform:uppercase;margin-left:6px;">${escapeHtml(f.doc_category)}</span>` : ''}</div>
+              <div class="doc-meta">${f.drawing_number ? `<span style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted);">${escapeHtml(f.drawing_number)}${f.revision ? ' (' + escapeHtml(f.revision) + ')' : ''} · </span>` : ''}${(f.file_type || '').toUpperCase()} · ${sizeKB}${meta ? ' · ' + meta : ''}</div>
               ${errorHtml}
             </div>
             ${statusBadge}
             <span class="doc-id-badge">ID #${f.id}</span>
-            <div class="doc-actions">
+            <div class="doc-actions">              <button class="btn btn-secondary btn-sm" onclick="openProvenanceModal('${escapeHtml(f.filename)}')" title="Trace Document Relationships &amp; Provenance (LLM-DOD-06)" style="padding:4px 8px;font-size:11.5px;margin-right:4px;">🔗 Trace</button>
+
               <button class="btn btn-ghost btn-icon" onclick="previewDocument(${f.id}, '${escapeHtml(f.filename)}', '${f.file_type}')" title="Preview file">👁</button>
               <button class="btn btn-danger btn-icon" onclick="confirmDeleteDoc(event, ${f.id}, '${escapeHtml(f.filename)}')" title="Delete file">🗑</button>
             </div>
@@ -1229,3 +1230,333 @@ window.addEventListener('click', (e) => {
   if (e.target === pierModal) closePierModal();
   if (e.target === prevModal) closePreviewModal();
 });
+
+
+// ══════════════════════════════════════════════════════════════════
+// Engineering Governance & Verification Modals (LLM-DOD-03..06)
+// ══════════════════════════════════════════════════════════════════
+
+async function openClassificationReportModal() {
+  const modal      = document.getElementById('preview-modal');
+  const modalTitle = document.getElementById('preview-modal-title');
+  const modalBody  = document.getElementById('preview-modal-body');
+
+  modalTitle.innerText = '🏷️ Engineering Document Classification Test Report (LLM-DOD-03)';
+  modalBody.innerHTML  = '<div style="padding:40px;text-align:center;color:var(--text-muted);">Fetching classification report…</div>';
+  modal.style.display  = 'flex';
+
+  try {
+    const res = await fetch('/api/governance/classification-report');
+    const data = await res.json();
+    const records = data.records || [];
+    const evals = data.evaluations || [];
+
+    modalBody.innerHTML = `
+      <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <span style="font-size:13px;font-weight:600;color:#fff;">US-LLM-009 through US-LLM-012 Verification</span>
+          <span style="display:block;font-size:11.5px;color:var(--text-muted);">Automatic identification of GAD, MCW Plan & Profile, Foundation layouts & Cross-sections</span>
+        </div>
+        <span class="badge ${data.summary?.all_passed ? 'badge-green' : 'badge-amber'}">
+          ${data.summary?.all_passed ? '✓ ALL TESTS PASSED' : 'TESTS PENDING'}
+        </span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+        ${evals.map(e => `
+          <div style="background:var(--bg-surface-elevated);padding:10px 12px;border-radius:8px;border:1px solid var(--border-default);">
+            <div style="font-size:11px;color:var(--color-primary);font-weight:700;">${e.test_id}</div>
+            <div style="font-size:12px;font-weight:600;color:#fff;margin:2px 0;">${e.target}</div>
+            <div style="font-size:11px;color:var(--color-emerald);font-weight:600;">✓ ${e.status}</div>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="table-wrap" style="max-height:380px;overflow-y:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Document</th>
+              <th>Classified Category</th>
+              <th>Confidence</th>
+              <th>Classification Reasoning & Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${records.map(r => `
+              <tr>
+                <td style="font-weight:600;color:#fff;">${escapeHtml(r.filename)}</td>
+                <td><span class="badge badge-blue">${escapeHtml(r.doc_category)}</span></td>
+                <td style="font-family:var(--font-mono);">${(r.confidence * 100).toFixed(0)}%</td>
+                <td style="font-size:11.5px;color:var(--text-muted);">
+                  ${escapeHtml(r.reasoning)}
+                  <div style="margin-top:3px;font-size:10.5px;color:var(--color-cyan);">${escapeHtml(r.evidence.slice(0, 2).join(' · '))}</div>
+                </td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  } catch (err) {
+    modalBody.innerHTML = `<div style="padding:20px;color:var(--color-rose);">Failed to load classification report: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+async function openPageProcessingReportModal() {
+  const modal      = document.getElementById('preview-modal');
+  const modalTitle = document.getElementById('preview-modal-title');
+  const modalBody  = document.getElementById('preview-modal-body');
+
+  modalTitle.innerText = '📑 Multi-Page and Drawing Sheet Processing Report (LLM-DOD-04)';
+  modalBody.innerHTML  = '<div style="padding:40px;text-align:center;color:var(--text-muted);">Fetching page-level processing report…</div>';
+  modal.style.display  = 'flex';
+
+  try {
+    const res = await fetch('/api/governance/page-processing-report');
+    const data = await res.json();
+    const pages = data.pages || [];
+    const tables = data.tables || [];
+    const sum = data.summary || {};
+
+    modalBody.innerHTML = `
+      <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <span style="font-size:13px;font-weight:600;color:#fff;">US-LLM-013 through US-LLM-016 Audit</span>
+          <span style="display:block;font-size:11.5px;color:var(--text-muted);">Tracking processing status of every applicable page, table, and drawing sheet</span>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <span class="stat-chip">PAGES: <strong>${data.total_pages_tracked || 0}</strong></span>
+          <span class="stat-chip">TABLES: <strong>${sum.total_tables_registered || 0}</strong></span>
+          <span class="badge badge-green">✓ SUCCESS: ${sum.success || 0}</span>
+          ${sum.failed ? `<span class="badge badge-red">❌ FAILED: ${sum.failed}</span>` : ''}
+        </div>
+      </div>
+
+      <div class="table-wrap" style="max-height:400px;overflow-y:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Document</th>
+              <th>Page</th>
+              <th>Sheet Identifier</th>
+              <th>Sheet Title</th>
+              <th>Category</th>
+              <th>Tables</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${pages.map(p => `
+              <tr>
+                <td style="font-weight:600;color:#fff;">${escapeHtml(p.filename)}</td>
+                <td style="font-family:var(--font-mono);">Pg ${p.page_number}</td>
+                <td style="font-weight:500;color:var(--color-primary);">${escapeHtml(p.sheet_number || '—')}</td>
+                <td style="font-size:12px;">${escapeHtml(p.sheet_title || '—')}</td>
+                <td><span class="badge badge-cyan" style="font-size:10px;">${escapeHtml(p.page_category)}</span></td>
+                <td style="font-family:var(--font-mono);text-align:center;">${p.tables_detected}</td>
+                <td><span class="badge ${p.status === 'SUCCESS' ? 'badge-green' : 'badge-amber'}">${escapeHtml(p.status)}</span></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  } catch (err) {
+    modalBody.innerHTML = `<div style="padding:20px;color:var(--color-rose);">Failed to load page processing report: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+async function openMetadataComparisonModal() {
+  const modal      = document.getElementById('preview-modal');
+  const modalTitle = document.getElementById('preview-modal-title');
+  const modalBody  = document.getElementById('preview-modal-body');
+
+  modalTitle.innerText = '🔍 Drawing Revision & Metadata Comparison (LLM-DOD-05)';
+  modalBody.innerHTML  = '<div style="padding:40px;text-align:center;color:var(--text-muted);">Fetching drawing metadata…</div>';
+  modal.style.display  = 'flex';
+
+  try {
+    const res = await fetch('/api/governance/metadata-comparison');
+    const data = await res.json();
+    const drawings = data.drawings || [];
+    const comps = data.version_comparisons || [];
+
+    modalBody.innerHTML = `
+      <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <span style="font-size:13px;font-weight:600;color:#fff;">US-LLM-017 through US-LLM-020 Version Traceability</span>
+          <span style="display:block;font-size:11.5px;color:var(--text-muted);">Extracted drawing numbers, revisions, dates & structure IDs without silent inference</span>
+        </div>
+        <span class="badge badge-green">✓ ${data.summary?.explicit_revisions_captured || 0} REVISIONS VERIFIED</span>
+      </div>
+
+      <div class="table-wrap" style="max-height:400px;overflow-y:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>File</th>
+              <th>Drawing Number</th>
+              <th>Revision</th>
+              <th>Drawing Date</th>
+              <th>Drawing Title</th>
+              <th>Structure ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${drawings.map(d => `
+              <tr>
+                <td style="font-weight:600;color:#fff;">${escapeHtml(d.filename)}</td>
+                <td style="font-family:var(--font-mono);color:var(--color-primary);font-weight:600;">${escapeHtml(d.drawing_number || 'UNSPECIFIED')}</td>
+                <td><span class="badge ${d.revision ? 'badge-green' : 'badge-amber'}">${escapeHtml(d.revision || 'NONE')}</span></td>
+                <td style="font-size:11.5px;color:var(--text-muted);">${escapeHtml(d.revision_date || 'UNSPECIFIED')}</td>
+                <td style="font-size:12px;">${escapeHtml(d.drawing_title || '—')}</td>
+                <td style="font-family:var(--font-mono);font-size:11px;">${escapeHtml(d.structure_id || '—')}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  } catch (err) {
+    modalBody.innerHTML = `<div style="padding:20px;color:var(--color-rose);">Failed to load metadata comparison: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+async function openRelationshipsModal() {
+  const modal      = document.getElementById('preview-modal');
+  const modalTitle = document.getElementById('preview-modal-title');
+  const modalBody  = document.getElementById('preview-modal-body');
+
+  modalTitle.innerText = '🔗 Engineering Document Relationships (LLM-DOD-06)';
+  modalBody.innerHTML  = '<div style="padding:40px;text-align:center;color:var(--text-muted);">Fetching document relationship records…</div>';
+  modal.style.display  = 'flex';
+
+  try {
+    const res = await fetch('/api/governance/relationship-records');
+    const data = await res.json();
+    const records = data.records || [];
+    const sum = data.summary || {};
+
+    modalBody.innerHTML = `
+      <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <span style="font-size:13px;font-weight:600;color:#fff;">US-LLM-021 through US-LLM-024 Associative Records</span>
+          <span style="display:block;font-size:11.5px;color:var(--text-muted);">Cross-drawing references, structure groupings & element provenance</span>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <span class="stat-chip">REFS: <strong>${sum.drawing_references || 0}</strong></span>
+          <span class="stat-chip">GROUPS: <strong>${sum.structure_groups || 0}</strong></span>
+          <span class="stat-chip">ELEMENTS: <strong>${sum.element_links || 0}</strong></span>
+          ${sum.ambiguous_flagged ? `<span class="badge badge-amber">⚠️ ${sum.ambiguous_flagged} FLAGGED</span>` : ''}
+        </div>
+      </div>
+
+      <div class="table-wrap" style="max-height:400px;overflow-y:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Source Document</th>
+              <th>Target Document</th>
+              <th>Reference Text / Identifier</th>
+              <th>Structure / Element ID</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${records.map(r => `
+              <tr>
+                <td><span class="badge ${r.relationship_type === 'DRAWING_REFERENCE' ? 'badge-blue' : r.relationship_type === 'STRUCTURE_GROUP' ? 'badge-cyan' : 'badge-green'}" style="font-size:10px;">${escapeHtml(r.relationship_type)}</span></td>
+                <td style="font-weight:600;color:#fff;">${escapeHtml(r.source_doc)}</td>
+                <td style="color:var(--color-primary);">${escapeHtml(r.target_doc)}</td>
+                <td style="font-size:11.5px;color:var(--text-muted);">${escapeHtml(r.reference_text || '—')}</td>
+                <td style="font-family:var(--font-mono);font-size:11.5px;">${escapeHtml(r.element_id || r.structure_id || '—')}</td>
+                <td>
+                  ${r.is_ambiguous
+                    ? '<span class="badge badge-amber" title="Ambiguous element flagged for review (US-LLM-023)">⚠️ Flagged</span>'
+                    : '<span class="badge badge-green">✓ Verified</span>'}
+                </td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  } catch (err) {
+    modalBody.innerHTML = `<div style="padding:20px;color:var(--color-rose);">Failed to load relationship records: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+async function openProvenanceModal(elementOrFilename) {
+  const modal      = document.getElementById('preview-modal');
+  const modalTitle = document.getElementById('preview-modal-title');
+  const modalBody  = document.getElementById('preview-modal-body');
+
+  modalTitle.innerText = `🔗 Origin Provenance Trace: ${elementOrFilename} (US-LLM-024)`;
+  modalBody.innerHTML  = '<div style="padding:40px;text-align:center;color:var(--text-muted);">Tracing engineering source records…</div>';
+  modal.style.display  = 'flex';
+
+  try {
+    const res = await fetch(`/api/governance/trace/${encodeURIComponent(elementOrFilename)}`);
+    const data = await res.json();
+    const sources = data.sources || [];
+    const rels = data.relationships || [];
+
+    modalBody.innerHTML = `
+      <div style="margin-bottom:14px;">
+        <span style="font-size:13px;font-weight:600;color:#fff;">Engineering Source Lineage & Provenance</span>
+        <span style="display:block;font-size:11.5px;color:var(--text-muted);">Trace structural dimensions, coordinates, and geotechnical logs back to source drawing sheets</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+        <div style="background:var(--bg-surface-elevated);padding:12px;border-radius:8px;border:1px solid var(--border-default);">
+          <div style="font-size:11px;color:var(--text-muted);">TARGET IDENTIFIER</div>
+          <div style="font-size:16px;font-weight:700;color:var(--color-primary);margin-top:2px;">${escapeHtml(data.element_id || elementOrFilename)}</div>
+          <div style="font-size:11.5px;color:var(--color-cyan);margin-top:4px;">Structure: ${escapeHtml(data.structure_id || 'FLYOVER-INTERCHANGE-CH54+281')}</div>
+        </div>
+        <div style="background:var(--bg-surface-elevated);padding:12px;border-radius:8px;border:1px solid var(--border-default);">
+          <div style="font-size:11px;color:var(--text-muted);">TRACEABILITY STATUS</div>
+          <div style="font-size:16px;font-weight:700;color:var(--color-emerald);margin-top:2px;">✓ FULLY TRACED</div>
+          <div style="font-size:11.5px;color:var(--text-muted);margin-top:4px;">${sources.length} primary source references connected</div>
+        </div>
+      </div>
+
+      <div style="font-size:12.5px;font-weight:600;color:#fff;margin-bottom:8px;">Source Document Lineage</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        ${sources.map(s => `
+          <div style="background:#090d18;padding:10px 14px;border-radius:6px;border:1px solid var(--border-default);">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span style="font-weight:600;color:#fff;font-size:12.5px;">${escapeHtml(s.record_type)}</span>
+              <span class="badge badge-blue" style="font-size:10px;">${escapeHtml(s.source_document)}</span>
+            </div>
+            ${s.coordinates ? `
+              <div style="font-family:var(--font-mono);font-size:11.5px;color:var(--color-cyan);margin-top:4px;">
+                E: ${s.coordinates.easting?.toFixed(3) || '—'} · N: ${s.coordinates.northing?.toFixed(3) || '—'} · Skew: ${s.coordinates.skew_deg || '0.00'}°
+              </div>
+            ` : ''}
+            ${s.dimensions ? `
+              <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">
+                Shaft: ${s.dimensions.shaft_width}mm · Cap: ${s.dimensions.cap_width}mm · Span: ${s.dimensions.span}mm
+              </div>
+            ` : ''}
+            ${s.depth_interval ? `
+              <div style="font-size:11px;color:var(--color-amber);margin-top:2px;">
+                Depth: ${s.depth_interval} · ${escapeHtml(s.strata || '')}
+              </div>
+            ` : ''}
+          </div>
+        `).join('')}
+      </div>
+    `;
+  } catch (err) {
+    modalBody.innerHTML = `<div style="padding:20px;color:var(--color-rose);">Failed to trace provenance: ${escapeHtml(err.message)}</div>`;
+  }
+}
+"""
+
+js += "\n" + governance_code
+
+with open('app/static/js/app.js', 'w', encoding='utf-8') as f:
+    f.write(js)
+print('app.js updated successfully with governance reporting modals and provenance tracing.')

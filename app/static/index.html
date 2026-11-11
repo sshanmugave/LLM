@@ -2060,7 +2060,11 @@ tr:hover td {
             </div>
             <div style="display:flex;gap:10px;align-items:center;">
               <span class="stat-chip">TOTAL FILES: <strong id="docs-count">0</strong></span>
-              <button class="btn btn-secondary btn-sm" id="btn-validation-logs" onclick="openValidationLogsModal()" title="View file validation audit logs (LLM-DOD-02)">📋 Validation Logs</button>
+              <button class="btn btn-secondary btn-sm" id="btn-validation-logs" onclick="openValidationLogsModal()" title="View file validation audit logs (LLM-DOD-02)">📋 Validation</button>
+              <button class="btn btn-secondary btn-sm" id="btn-classification-rpt" onclick="openClassificationReportModal()" title="View Document Classification Report (LLM-DOD-03)">🏷️ Classification</button>
+              <button class="btn btn-secondary btn-sm" id="btn-sheets-rpt" onclick="openPageProcessingReportModal()" title="View Multi-Page & Sheet Processing Report (LLM-DOD-04)">📑 Sheet Process</button>
+              <button class="btn btn-secondary btn-sm" id="btn-metadata-rpt" onclick="openMetadataComparisonModal()" title="View Drawing Metadata & Revision Comparison (LLM-DOD-05)">🔍 Revisions</button>
+              <button class="btn btn-secondary btn-sm" id="btn-relationships-rpt" onclick="openRelationshipsModal()" title="View Document Relationships & Provenance (LLM-DOD-06)">🔗 Relationships</button>
               <button class="btn btn-secondary btn-sm" id="btn-refresh-docs">↺ Refresh</button>
             </div>
           </div>
