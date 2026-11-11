@@ -368,3 +368,4 @@ def generate_page_processing_report() -> Dict[str, Any]:
         "tables": tables,
         "evaluations": evaluations
     }
+

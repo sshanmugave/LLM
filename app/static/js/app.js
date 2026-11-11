@@ -1553,10 +1553,18 @@ async function openProvenanceModal(elementOrFilename) {
     modalBody.innerHTML = `<div style="padding:20px;color:var(--color-rose);">Failed to trace provenance: ${escapeHtml(err.message)}</div>`;
   }
 }
-"""
 
-js += "\n" + governance_code
+// ── Global Window Exports for Inline Event Handlers ────────────
+window.appState = appState;
+window.navigateTo = navigateTo;
+window.openClassificationReportModal = openClassificationReportModal;
+window.openMetadataComparisonModal = openMetadataComparisonModal;
+window.openPageProcessingReportModal = openPageProcessingReportModal;
+window.openRelationshipsModal = openRelationshipsModal;
+window.openValidationLogsModal = openValidationLogsModal;
+window.traceProvenance = traceProvenance;
+window.closePierModal = closePierModal;
+window.closePreviewModal = closePreviewModal;
+window.quickPrompt = quickPrompt;
+window.savePierReview = savePierReview;
 
-with open('app/static/js/app.js', 'w', encoding='utf-8') as f:
-    f.write(js)
-print('app.js updated successfully with governance reporting modals and provenance tracing.')

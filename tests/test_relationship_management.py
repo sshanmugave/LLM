@@ -65,3 +65,4 @@ def test_document_relationship_records_deliverable():
     assert "evaluations" in report
     assert len(report["evaluations"]) == 4
     assert report["summary"]["all_passed"] is True
+

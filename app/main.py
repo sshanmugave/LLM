@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import BASE_DIR, PAGE_IMAGES_DIR, INPUT_DIR
@@ -29,6 +29,11 @@ static_path = BASE_DIR / "app" / "static"
 static_path.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(static_path)), name="static")
 
+if (static_path / "css").exists():
+    app.mount("/css", StaticFiles(directory=str(static_path / "css")), name="css")
+if (static_path / "js").exists():
+    app.mount("/js", StaticFiles(directory=str(static_path / "js")), name="js")
+
 if PAGE_IMAGES_DIR.exists():
     app.mount("/page_images", StaticFiles(directory=str(PAGE_IMAGES_DIR)), name="page_images")
 
@@ -48,6 +53,10 @@ app.include_router(governance.router, prefix="/api/governance", tags=["Engineeri
 def on_startup():
     init_db()
     clear_extracted_data()   # Fresh session — wipe pipeline results on every server start
+
+@app.get("/favicon.ico")
+def favicon():
+    return Response(status_code=204)
 
 @app.get("/")
 def read_root():

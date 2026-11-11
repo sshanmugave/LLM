@@ -101,3 +101,4 @@ def test_drawing_metadata_comparison_deliverable():
     assert "evaluations" in report
     assert len(report["evaluations"]) == 4
     assert report["summary"]["all_passed"] is True
+

@@ -93,3 +93,4 @@ def test_classification_test_report_deliverable():
     assert "evaluations" in report
     assert report["summary"]["total_tests"] >= 4
     assert report["summary"]["all_passed"] is True
+

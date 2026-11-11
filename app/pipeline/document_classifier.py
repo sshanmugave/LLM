@@ -483,3 +483,4 @@ def generate_classification_test_report() -> Dict[str, Any]:
             "all_passed": passed_tests == total_tests
         }
     }
+
