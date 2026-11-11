@@ -1,0 +1,905 @@
+
+================================================================================
+PDF: GAD 1 (1) 1.pdf (19.7 MB)
+================================================================================
+Pages: 10
+
+  Page 0: 1684x1191, type=TEXT-RICH, text_chars=2493, images=78, drawings=107131
+    Keywords: loop, chainage, general arrangement
+    Text preview: ENTRY RAMP / LOOP - 1 | EXIT RAMP / LOOP - 2 | ENTRY RAMP / LOOP - 3 | EXIT RAMP / LOOP - 4 | 54+000 | 54+100 | 54+200 | 54+300 | 54+400 | 54+500 | 54+600 | CS 54+012.955 | ST 54+152.955 | 2m x 2m | 040 | 032 | PROPOSAL | Str. No | CA CHAINAGE | NEW CHAINAGE | INTERCHANGE | (2x30)+ (1x30)+ (6x30)+ | 54+290 | 55/2 | 54+281 |  (1x30) + (7x30) | PROPOSAL | Str. No | CA CHAINAGE | NEW CHAINAGE | MAJOR BRIDGE | 10 x 10 - SR | 54+567 | 55/3 | 54+561 | 22 | 4 | 22 | 22 | 4 | 22 | A | PP | O | R | A | CH |  P | O | RT | I | O | N | APP | O | RA | C | H |  P | O | RT | I | O | N | AP | PO | R | A | CH |  P | O | RT | ION | A | P | P | OR | AC | H  | PO | RT I | O
+
+  Page 1: 1684x1191, type=TEXT-RICH, text_chars=1434, images=5, drawings=27386
+    Keywords: chainage, general arrangement
+    Text preview: M B | G A | GENERAL ARRANGEMENT DRAWING | FOR INTERCHANGE AT CH: 54+281 | 8 3 3 0 | SR | NKC | SSR | ARS | RC | THIS DRAWING SHALL BE READ IN CONJUNCTION WITH | DRAWING NO. O24087-C-RP-MB-GA-8330 (SHEET 1 OF 10) | FOR APPROVAL | TNRIDC and L&T Construction,Transportation Infrastructure  | REV | DESCRIPTION | DESIGNED DRAWN CHECKED APPROVED | DATE | DESIGNED | DRAWN | CHECKED | APPROVED | TITLE : | DRAWING NO : | REV: | SIZE: | DATE | - | - | - | Cad File No: | D:\CPRR-2\STRUCTURES\INTERCHANGE_MJB\ O24087-C-RP-MB-GA-8330-RC_Interchange at Ch-54+281.dwg | A2 | J
+
+  Page 2: 1684x1191, type=TEXT-RICH, text_chars=1434, images=5, drawings=22386
+    Keywords: chainage, general arrangement
+    Text preview: M B | G A | GENERAL ARRANGEMENT DRAWING | FOR INTERCHANGE AT CH: 54+281 | 8 3 3 0 | SR | NKC | SSR | ARS | RC | THIS DRAWING SHALL BE READ IN CONJUNCTION WITH | DRAWING NO. O24087-C-RP-MB-GA-8330 (SHEET 1 OF 10) | FOR APPROVAL | TNRIDC and L&T Construction,Transportation Infrastructure  | REV | DESCRIPTION | DESIGNED DRAWN CHECKED APPROVED | DATE | DESIGNED | DRAWN | CHECKED | APPROVED | TITLE : | DRAWING NO : | REV: | SIZE: | DATE | - | - | - | Cad File No: | D:\CPRR-2\STRUCTURES\INTERCHANGE_MJB\ O24087-C-RP-MB-GA-8330-RC_Interchange at Ch-54+281.dwg | A2 | J
+
+  Page 3: 1684x1191, type=TEXT-RICH, text_chars=1434, images=5, drawings=21926
+    Keywords: chainage, general arrangement
+    Text preview: M B | G A | GENERAL ARRANGEMENT DRAWING | FOR INTERCHANGE AT CH: 54+281 | 8 3 3 0 | SR | NKC | SSR | ARS | RC | THIS DRAWING SHALL BE READ IN CONJUNCTION WITH | DRAWING NO. O24087-C-RP-MB-GA-8330 (SHEET 1 OF 10) | FOR APPROVAL | TNRIDC and L&T Construction,Transportation Infrastructure  | REV | DESCRIPTION | DESIGNED DRAWN CHECKED APPROVED | DATE | DESIGNED | DRAWN | CHECKED | APPROVED | TITLE : | DRAWING NO : | REV: | SIZE: | DATE | - | - | - | Cad File No: | D:\CPRR-2\STRUCTURES\INTERCHANGE_MJB\ O24087-C-RP-MB-GA-8330-RC_Interchange at Ch-54+281.dwg | A2 | J
+
+  Page 4: 1684x1191, type=TEXT-RICH, text_chars=1434, images=5, drawings=14877
+    Keywords: chainage, general arrangement
+    Text preview: M B | G A | GENERAL ARRANGEMENT DRAWING | FOR INTERCHANGE AT CH: 54+281 | 8 3 3 0 | SR | NKC | SSR | ARS | RC | FOR APPROVAL | THIS DRAWING SHALL BE READ IN CONJUNCTION WITH | DRAWING NO. O24087-C-RP-MB-GA-8330 (SHEET 1 OF 10) | TNRIDC and L&T Construction,Transportation Infrastructure  | REV | DESCRIPTION | DESIGNED DRAWN CHECKED APPROVED | DATE | DESIGNED | DRAWN | CHECKED | APPROVED | TITLE : | DRAWING NO : | REV: | SIZE: | DATE | - | - | - | Cad File No: | D:\CPRR-2\STRUCTURES\INTERCHANGE_MJB\ O24087-C-RP-MB-GA-8330-RC_Interchange at Ch-54+281.dwg | A2 | J
+
+  Page 5: 1684x1191, type=TEXT-RICH, text_chars=1434, images=5, drawings=16406
+    Keywords: chainage, general arrangement
+    Text preview: M B | G A | GENERAL ARRANGEMENT DRAWING | FOR INTERCHANGE AT CH: 54+281 | 8 3 3 0 | SR | NKC | SSR | ARS | RC | FOR APPROVAL | THIS DRAWING SHALL BE READ IN CONJUNCTION WITH | DRAWING NO. O24087-C-RP-MB-GA-8330 (SHEET 1 OF 10) | TNRIDC and L&T Construction,Transportation Infrastructure  | REV | DESCRIPTION | DESIGNED DRAWN CHECKED APPROVED | DATE | DESIGNED | DRAWN | CHECKED | APPROVED | TITLE : | DRAWING NO : | REV: | SIZE: | DATE | - | - | - | Cad File No: | D:\CPRR-2\STRUCTURES\INTERCHANGE_MJB\ O24087-C-RP-MB-GA-8330-RC_Interchange at Ch-54+281.dwg | A2 | J
+
+  Page 6: 1684x1191, type=TEXT-RICH, text_chars=6998, images=5, drawings=50525
+    Keywords: chainage, foundation, general arrangement
+    Text preview: 0.00 | HIGHLY WEATHERED ROCK | 5 | 9 | 14 | 15 | 18 | 19 | 23 | 24 | 25 | 27 | 45.00 | BROWNISH SILTY SAND (SP-SM) | 0.25 | BROWNISH CLAYEY SAND (SC) | 9.00 | GREYISH BROWN | CLAYEY SAND (SC) | 5.00 | GREYISH BROWN | CLAYEY SAND (SC) | 10.50 | BROWNISH SILTY SAND (SM) | >100 | 4.00 | BLACKISH SANDY CLAY (CI) | 12.00 | 1.00 | 2.00 | 3.00 | BROWNISH SILTY SAND (SM) | BROWNISH SILTY SAND (SP-SM) | BROWNISH SILTY SAND (SM) | DEPTH (m) | 'N' VALUE | 6.00 | 7.50 | 0.00 | HIGHLY WEATHERED ROCK | 4 | 10 | 15 | 11 | 16 | 8 | 18 | 21 | 22 | 45.00 | BROWNISH SILTY SAND | (SP-SM) | 0.25 | BROWNISH CLAYEY SAND (
+
+  Page 7: 1684x1191, type=TEXT-RICH, text_chars=6953, images=5, drawings=40120
+    Keywords: chainage, foundation, general arrangement
+    Text preview: 0.00 | HIGHLY WEATHERED ROCK | 4 | 4 | 5 | 11 | 9 | 10 | 14 | 15 | 16 | 18 | BROWNISH SANDY CLAY WITH | SANDSTONE FRAGMENTS | GREYISH BROWN SILTY SAND (SP-SM) | 45.00 | GREYISH BROWN CLAYEY SAND (SC) | GREYISH BROWN CLAYEY SAND | WITH CALCAREOUS DEPOSITS (SC) | 0.25 | 6.00 | 12.00 | GREYISH BROWN CLAYEY SAND (SC) | 20 | 13.50 | 15.00 | 19 | >100 | 2.00 | BROWNISH SILTY SAND (SM) | DEPTH (m) | 'N' VALUE | 1.00 | 3.00 | 4.00 | 5.00 | 7.50 | 9.00 | 10.50 | 0.00 | HIGHLY WEATHERED ROCK | 5 | 6 | 10 | 13 | 15 | 20 | 21 | 26 | 18 | 20 | BROWNISH CLAYEY SAND WITH | SANDSTONE FRAGMENTS | BROWNISH SILTY SAND
+
+  Page 8: 1684x1191, type=TEXT-RICH, text_chars=6870, images=5, drawings=30869
+    Keywords: chainage, foundation, general arrangement
+    Text preview: 0.00 | HIGHLY WEATHERED ROCK | 8 | 12 | 13 | 16 | 17 | 19 | 10 | 23 | 29 | 25 | 45.00 | BROWNISH SILTY SAND (SP-SM) | BROWNISH GREY CLAYEY SAND (SC) | >100 | 0.25 | BROWNISH CLAYEY SAND (SC) | 10.50 | 4.00 | 12.00 | GREYISH BROWN CLAYEY SAND | WITH SANDSTONE  FRAGMENTS | BLACKISH SILTY CLAY (CH) | 6.00 | 9.00 | GREYISH BROWN SANDY CLAY (CL) | 1.00 | 3.00 | BROWNISH SILTY SAND (SM) | BROWNISH SILTY SAND (SM) | 0.00 | HIGHLY WEATHERED ROCK | 0.25 | 10.50 | 12.00 | 7.50 | 8 | 11 | 12 | 12 | 19 | 20 | 15 | 27 | 36 | 39 | >100 | GREYISH BROWN, COMPLETELY WEATHERED, | DISINTEGRATED AND DECOMPOSED 
+
+  Page 9: 1684x1191, type=TEXT-RICH, text_chars=6765, images=5, drawings=39583
+    Keywords: chainage, foundation, general arrangement
+    Text preview: 0.00 | 5 | 7 | 16 | 11 | 17 | 10 | 10 | 16 | 29 | >100 | 45.00 | BROWNISH SILTY SAND (SM) | 66 | 2.00 | 5.00 | 7.50 | 9.00 | 10.50 | 12.00 | 13.50 | 15.00 | 19.50 | 22.50 | 27.00 | 36.00 | WELL GRADED-SILTY SAND (SW-SM) | BROWNISH POORLY GRADED SAND (SP) | BROWN CLAYEY SAND (SC) | BROWNISH GREY SAND CLAY (CI) | GREYISH SILTY CLAY (CH) | BROWN CLAYEY SAND (SC) | BROWNISH SILTY SAND (SM) | BROWN CLAYEY SAND (SC) | BROWNISH SILTY SAND (SM) | BROWN CLAYEY SAND (SC) | GREYISH SILTY CLAY (CH) | HIGHLY WEATHERED ROCK | 10 | >100 | 59 | >100 | >100 | 89 | >100 | 63 | 0.00 | 11 | 13 | 15 | 18 | 19 | 20 | 25 | 
+
+  --- pdfplumber table analysis ---
+  Page 0: 3 table(s)
+    Table 0: 6 rows x 4 cols
+      Row 0: ['ENTRY RAMP / LOOP - 1\nEXIT RAMP / LOOP -', '', '', 'TNRIDC and L&T Construction,Transportati']
+      Row 1: ['', 'W\nO\nR\nP NH-5 BH43\n0+120.637\nAPPORACH POR', '', '']
+      Row 2: ['', '', '', 'BH58\nBH59\n4 22 VIADUCT BH 6 0 .000\n003+4']
+      Row 3: ['', 'ENTRY RAMP / LOOP - 3', '', '']
+      ... (2 more rows)
+    Table 1: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 2: 4 rows x 2 cols
+      Row 0: ['', '']
+      Row 1: ['', '']
+      Row 2: ['', '']
+      Row 3: ['', '']
+  Page 1: 4 table(s)
+    Table 0: 19 rows x 18 cols
+      Row 0: ['TNRIDC and L&T Construction,Transportati', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      ... (15 more rows)
+    Table 1: 1 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+    Table 2: 3 rows x 4 cols
+      Row 0: ['', '', '', '']
+      Row 1: ['', '', '', '']
+      Row 2: ['', '', '', '']
+    Table 3: 1 rows x 4 cols
+      Row 0: ['TNRIDC\nILNADU ROAD INFRASTRUCTURE\nDEVELO', "AUTHORITY'S ENGINEER : PR\nTHEME ENGINEER", 'OOF CONSULTANT :\nASIA INFRASTRUCTURE\nADV', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL INFRA']
+  Page 2: 6 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 2 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+      Row 1: ['', '', '', '', '']
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 4: 4 rows x 11 cols
+      Row 0: ['', '', '', '', '', '', '', '', '', 'FOR APPROVAL', '']
+      Row 1: ['', "LIENT : AUTHORITY'S ENGIN\nTNRIDC\nTHE\nTAM", '', 'EER :\nME ENGINEERING\nVICE PVT. LTD.,', 'PROOF CONSULTANT : SAFETY CONSULTANT :\nA', '', 'OBAL INFRA\nNT LIMITED\nof AGSL)\ncture, ED', 'JOB No. : O24\nDESIGNED SS\nDRAWN SR\nCHECK', '087-C-RP TITLE :\nGENERAL ARRANGEMENT DRA', '', 'REV: RC\nSIZE: A2']
+      Row 2: ['', '', '', '', '', '', '', '', 'S DRAWING NO :\nC O 2 4 0 8 7 - C - R P -', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+    Table 5: 5 rows x 4 cols
+      Row 0: ['', '', '', '']
+      Row 1: ['', '', '', '']
+      Row 2: ['', '', '', '']
+      Row 3: ['', '', '', '']
+      ... (1 more rows)
+  Page 3: 6 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 1 rows x 3 cols
+      Row 0: ['', '', '']
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 4: 4 rows x 8 cols
+      Row 0: ['', '', '', '', '', '', '', 'ROVAL']
+      Row 1: ['', "ENT : AUTHORITY'S ENGINEER :\nTNRIDC\nTHEM", '', 'PROOF CONSULTANT : SAFETY CONSULTANT :\nG', 'BAL INFRA\nT LIMITED\nAGSL)\nure, EDRC\nAUTH', 'JOB No. : O2408\nDESIGNED SSR\nDRAWN SR\nCH', '7-C-RP TITLE :\nGENERAL ARRANGEMENT DRAWI', 'REV: RC\nSIZE: A2']
+      Row 2: ['', '', '', 'CONTRACTOR : DESIGN CONSULTANT :\nTO\nOAD ', '', '', 'DRAWING NO :\nO 2 4 0 8 7 - C - R P - M B', '']
+      Row 3: ['', '', '', '', '', '', '', '']
+    Table 5: 5 rows x 4 cols
+      Row 0: ['', '', '', '']
+      Row 1: ['', '', '', '']
+      Row 2: ['', '', '', '']
+      Row 3: ['', '', '', '']
+      ... (1 more rows)
+  Page 4: 7 table(s)
+    Table 0: 1 rows x 2 cols
+      Row 0: ['', '']
+    Table 1: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 1 rows x 2 cols
+      Row 0: ['', '']
+    Table 4: 3 rows x 2 cols
+      Row 0: ['FOR APPROVAL', '']
+      Row 1: ['', 'REV: RC']
+      Row 2: ['', 'SIZE: A2']
+    Table 5: 5 rows x 2 cols
+      Row 0: ['', '']
+      Row 1: ['', '']
+      Row 2: ['', '']
+      Row 3: ['', '']
+      ... (1 more rows)
+    Table 6: 1 rows x 3 cols
+      Row 0: ['', '', '']
+  Page 5: 4 table(s)
+    Table 0: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 1: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 2: 5 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+      ... (1 more rows)
+    Table 3: 3 rows x 3 cols
+      Row 0: ['NEER : PROOF CONSULTANT : SAFETY CONSULT', '', 'REV: RC\nGENERAL ARRANGEMENT DRAWING\nFOR ']
+      Row 1: ['', '', 'NO :\n8 7 - C - R P - M B - G A - 8 3 3 0']
+      Row 2: ['', '', '']
+  Page 6: 27 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 6 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n3.50\n4.00\n5.00\n5.50\n6.00\n7.50\n9.00', '15\n18\n19\n23\n24\n25', 'BROWNISH SILTY SAND (SM)\nBLACKISH SANDY ']
+      Row 3: ['10.50', '27', 'BROWNISH SILTY SAND (SM)']
+      ... (2 more rows)
+    Table 2: 7 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00\n7.50\n9.00', '11\n16\n8\n18\n21\n22\n>100', '(SP-SM)\nGREYISH SILTY CLAY (CH)\nGREYISH ']
+      Row 3: ['10.50', '', '']
+      ... (3 more rows)
+    Table 3: 7 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00\n7.50\n9.00', '21\n20\n22\n10\n27\n31', 'BROWNISH SILTY SAND (SM)\nGREYISH CLAYEY ']
+      Row 3: ['10.50', '48\n>100', 'GREYISH BROWN CLAYEY SAND\nWITH SANDSTONE']
+      ... (3 more rows)
+    Table 4: 6 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n4.50\n5.00\n6.00\n7.50\n9.00', '13\n16\n20\n23\n26\n38\n30', 'BROWNISH SILTY SAND (SM)\nBROWNISH GREY\nS']
+      Row 3: ['10.50', '', '']
+      ... (2 more rows)
+    Table 5: 6 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n4.50\n5.00\n6.00\n7.50\n9.00', '18\n15\n8\n28\n31\n34', 'BROWNISH SILTY SAND (SP)\nGREYISH SANDY C']
+      Row 3: ['10.50', '39', 'GREYISH BROWN CLAYEY\nSAND WITH CALCAREOU']
+      ... (2 more rows)
+    Table 6: 19 rows x 4 cols
+      Row 0: ['DEPTH (m)', "'N' VALUE\n9\n8", 'WELL GRADED-SILTY SAND (SW-SM)', '']
+      Row 1: ['0.00\n1.00\n2.00', '', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00\n7.50\n9.00', '10\n20\n16\n15\n19\n22\n24\n27\n<100', 'BROWNISH POORLY GRADED SAND (SP)\nWELL GR', '']
+      Row 3: ['10.50', '', '', '']
+      ... (15 more rows)
+    Table 7: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 8: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 9: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 10: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 11: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 12: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 13: 6 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '4', 'BROWNISH CLAYEY SAND (SC)']
+      Row 3: ['1.00\n2.00\n3.00\n4.00', '5\n10\n13\n14', 'BROWNISH SILTY SAND (SM)\nBROWNISH SILTY ']
+      ... (2 more rows)
+    Table 14: 11 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '6\n7\n10\n15\n17', 'BROWNISH CLAYEY SAND (SC)\nBROWNISH SILTY']
+      Row 3: ['1.00\n2.00\n3.00\n3.50\n4.00', '', '']
+      ... (7 more rows)
+    Table 15: 10 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '7\n8\n12\n13\n13', 'GREYISH CLAYEY SAND (SC)\nBROWNISH GREY S']
+      Row 3: ['1.00\n2.00\n3.00\n3.50\n4.00', '', '']
+      ... (6 more rows)
+    Table 16: 6 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['1.00\n2.00\n3.00\n4.00', '7\n10\n12\n13', 'BROWNISH CLAYEY SAND (SC)\nBROWNISH SILTY']
+      Row 3: ['5.00\n6.00\n7.50\n9.00\n10.50\n12.00', '13\n16\n18\n27\n33\n35', 'BROWNISH SAND (SP)\nBROWNISH GREY CLAYEY ']
+      ... (2 more rows)
+    Table 17: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['1.00\n2.00\n3.00\n4.00', '7\n11\n10\n14', 'BROWNISH SILTY SAND (SM)\nBROWNISH SAND (']
+      Row 3: ['5.00\n6.00\n7.50\n9.00\n10.50\n12.00', '16\n17\n21\n28\n34\n34\n38', 'BROWNISH SILTY SAND (SM)\nGREYISH BROWN C']
+      ... (4 more rows)
+    Table 18: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 19: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 20: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 21: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 22: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 23: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 24: 5 rows x 11 cols
+      Row 0: ['', '', '', '', '', '', '', 'CLIENT :\nTNRIDC\nTAMILNADU ROAD INFRASTRU', "AUTHORITY'S ENGINEER :\nTHEME ENGINEERING", 'PROOF CONSULTANT :\nASIA INFRASTRUCTURE\nA', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL\n- CON']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+      ... (1 more rows)
+    Table 25: 4 rows x 3 cols
+      Row 0: ['. : O24087-C-R', 'P TITLE : INTERCHANGE AT CH:54+281\nGENER', 'REV: RB']
+      Row 1: ['D SSR', '', 'SIZE: A2']
+      Row 2: ['SR', '', '']
+      Row 3: ['D ARS\nED NKC', 'DRAWING NO :\nO 2 4 0 8 7 - C - R P - M B', '']
+    Table 26: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+  Page 7: 25 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00\n3.00', '', '']
+      Row 2: ['4.00\n5.00\n6.00\n7.50', '9\n10\n14\n15\n16\n18\n20', 'GREYISH BROWN SILTY SAND (SP-SM)\nGREYISH']
+      Row 3: ['9.00', '', '']
+      ... (4 more rows)
+    Table 2: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00\n3.00', '', '']
+      Row 2: ['4.00\n5.00\n6.00\n7.50', '15\n20\n21\n26\n18', 'GREYISH BROWN SILTY\nSAND (SP-SM)\nGREYISH']
+      Row 3: ['9.00', '', '']
+      ... (4 more rows)
+    Table 3: 7 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00\n3.00', '', '']
+      Row 2: ['4.00\n5.00\n6.00\n7.50', '10\n12\n18\n20', 'BROWNISH SAND (SP)\nGREYISH BROWN SILTY S']
+      Row 3: ['9.00', '25\n39', 'GREYISH BROWN SANDY CLAY\nWITH CALCAREOUS']
+      ... (3 more rows)
+    Table 4: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00\n3.00', '', '']
+      Row 2: ['4.00\n5.00\n6.00\n7.50', '28\n30\n33\n32', 'GREYISH BROWN SANDY CLAY (CI)\nBROWNISH G']
+      Row 3: ['9.00', '29\n30\n34', 'GREYISH BROWN CLAYEY SAND (SC)\nGREYISH B']
+      ... (4 more rows)
+    Table 5: 8 rows x 2 cols
+      Row 0: ['DEPTH (m)', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00\n3.00', '']
+      Row 2: ['4.00\n5.00\n6.00\n7.50', '14\n20\n19\n25']
+      Row 3: ['9.00', '30']
+      ... (4 more rows)
+    Table 6: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 7: 2 rows x 2 cols
+      Row 0: ['15\n13\n7\n20\n22\n30', 'BROWNISH SILTY SAND (SM)\nGREYISH SILTY C']
+      Row 1: ['>100', '']
+    Table 8: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 9: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 10: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 11: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 12: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 13: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 14: 10 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '17\n22\n18\n18\n25', 'BROWNISH SILTY SAND (SP)\nGREYISH SILTY C']
+      Row 3: ['7.50', '', '']
+      ... (6 more rows)
+    Table 15: 10 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '18\n22\n27\n14', 'BROWNISH SILTY SAND (SP-SM)\nBROWNISH SIL']
+      Row 3: ['7.50', '37\n37\n43\n56\n70', 'BROWNISH GREY CLAYEY SAND (SC)']
+      ... (6 more rows)
+    Table 16: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n4.50\n5.00\n6.00', '17\n20\n12\n10\n18', 'GREYISH CLAYEY SAND (SC)\nBROWNISH GREY S']
+      Row 3: ['7.50', '', '']
+      ... (4 more rows)
+    Table 17: 9 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '20\n22\n23\n10\n15', 'BROWNISH SILTY SAND (SP-SM)\nGREYISH BLAC']
+      Row 3: ['7.50', '', '']
+      ... (5 more rows)
+    Table 18: 8 rows x 2 cols
+      Row 0: ['DEPTH (m)', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '12\n14\n17\n23']
+      Row 3: ['7.50', '24\n26\n33']
+      ... (4 more rows)
+    Table 19: 6 rows x 2 cols
+      Row 0: ['15\n16\n12\n22\n24', 'BROWNISH SILTY SAND (SM)\nGREYISH SANDY C']
+      Row 1: ['21', 'BROWNISH SANDY CLAY (CI)']
+      Row 2: ['36', 'GREYISH BROWN CLAYEY SAND (SC)']
+      Row 3: ['23', 'GREYISH BROWN CLAYEY SAND\nWITH CALCAREOU']
+      ... (2 more rows)
+    Table 20: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 21: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 22: 5 rows x 5 cols
+      Row 0: ['', '', '', 'FOR APPROVAL', '']
+      Row 1: ['OB No. : O24087-C-R', '', 'P TITLE : INTERCHANGE AT CH:54+281\nGENER', '', 'REV: RB']
+      Row 2: ['ESIGNED', 'SSR', '', '', 'SIZE: A2']
+      Row 3: ['RAWN', 'SR', '', '', '']
+      ... (1 more rows)
+    Table 23: 5 rows x 11 cols
+      Row 0: ['', '', '', '', '', '', '', 'CLIENT :\nTNRIDC\nTAMILNADU ROAD INFRASTRU', "AUTHORITY'S ENGINEER :\nTHEME ENGINEERING", 'PROOF CONSULTANT :\nASIA INFRASTRUCTURE\nA', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL\n- CON']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+      ... (1 more rows)
+    Table 24: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+  Page 8: 26 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 8 rows x 2 cols
+      Row 0: ['DEPTH (m)', '']
+      Row 1: ['0.00', '']
+      Row 2: ['0.25', '8']
+      Row 3: ['1.00\n2.00\n3.00', '12\n13\n16']
+      ... (4 more rows)
+    Table 2: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '8', 'BROWNISH CLAYEY SAND (SC)']
+      Row 3: ['1.00\n2.00\n3.00', '11\n12\n12', 'BROWNISH SILTY SAND (SM)']
+      ... (4 more rows)
+    Table 3: 7 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '4\n7\n10\n11', 'BROWNISH CLAYEY SAND (SC)\nBROWNISH SILTY']
+      Row 3: ['1.00\n2.00\n3.00', '', '']
+      ... (3 more rows)
+    Table 4: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['', '4\n5\n14\n10', 'BROWNISH SILTY SAND (SM)\nBROWNISH SILTY ']
+      Row 3: ['2.00\n3.00', '', '']
+      ... (4 more rows)
+    Table 5: 8 rows x 2 cols
+      Row 0: ['DEPTH (m)', '']
+      Row 1: ['0.00', '']
+      Row 2: ['0.25', '7']
+      Row 3: ['1.00\n2.00\n3.00', '9\n10\n11']
+      ... (4 more rows)
+    Table 6: 4 rows x 2 cols
+      Row 0: ["'N' VALUE", '']
+      Row 1: ['6\n7\n10\n12', 'BROWNISH SILTY SAND (SM)\nBROWNISH SILTY ']
+      Row 2: ['13\n16\n19\n31\n25', 'BROWNISH SILTY SAND (SP - SM)\nBROWNISH G']
+      Row 3: ['>100', '']
+    Table 7: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 8: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 9: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 10: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 11: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 12: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 13: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 14: 7 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '16\n21\n24\n18', 'BROWNISH SAND (SP)\nBROWNISH SILTY SAND (']
+      Row 3: ['7.50', '20', 'BROWNISH GREY CLAYEY SAND (SC)']
+      ... (3 more rows)
+    Table 15: 9 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '14\n18\n18\n22', 'BROWNISH SILTY SAND (SP-SM)\nBROWNISH SIL']
+      Row 3: ['7.50', '23', 'GREYISH BROWN SANDY CLAY (CI)']
+      ... (5 more rows)
+    Table 16: 10 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '15\n16\n17\n15', 'BROWNISH SILTY SAND (SP-SM)\nGREYISH BLAC']
+      Row 3: ['7.50', '20', 'GREYISH BROWN CLAYEY SAND (SC)']
+      ... (6 more rows)
+    Table 17: 9 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '9\n13\n16\n19', 'BROWNISH GREY CLAYEY SAND (SC)\nBROWNISH ']
+      Row 3: ['7.50', '20\n23\n25\n24', 'BROWNISH GREY CLAYEY SAND (SC)']
+      ... (5 more rows)
+    Table 18: 8 rows x 2 cols
+      Row 0: ['DEPTH (m)', '']
+      Row 1: ['0.00\n0.25\n1.00\n2.00', '']
+      Row 2: ['3.00\n4.00\n5.00\n6.00', '15\n17\n18\n21']
+      Row 3: ['7.50', '25']
+      ... (4 more rows)
+    Table 19: 7 rows x 2 cols
+      Row 0: ['14\n16\n21\n22\n19', 'GREYISH SILTY CLAY (CH)\nBROWNISH GREY SA']
+      Row 1: ['23\n29', 'BROWNISH GREY CLAYEY SAND (SC)']
+      Row 2: ['31', 'GREYISH BROWN CLAYEY SAND\nWITH CALCAREOU']
+      Row 3: ['35', 'GREYISH BROWN SANDY CLAY WITH\nCALCAREOUS']
+      ... (3 more rows)
+    Table 20: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 21: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 22: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 23: 5 rows x 5 cols
+      Row 0: ['', '', '', 'FOR APPROVAL', '']
+      Row 1: ['OB No. : O24087-C-R', '', 'P TITLE : INTERCHANGE AT CH:54+281\nGENER', '', 'REV: RB']
+      Row 2: ['ESIGNED', 'SSR', '', '', 'SIZE: A2']
+      Row 3: ['RAWN', 'SR', '', '', '']
+      ... (1 more rows)
+    Table 24: 5 rows x 11 cols
+      Row 0: ['', '', '', '', '', '', '', 'CLIENT :\nTNRIDC\nTAMILNADU ROAD INFRASTRU', "AUTHORITY'S ENGINEER :\nTHEME ENGINEERING", 'PROOF CONSULTANT :\nASIA INFRASTRUCTURE\nA', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL INFRA']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+      ... (1 more rows)
+    Table 25: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+  Page 9: 25 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 10 rows x 16 cols
+      Row 0: ["DEPTH (m) 'N' VALUE DEPTH (m) 'N' VALUE ", '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', 'FOR APPROVAL', '']
+      Row 2: ['', '', '', '', '', '', '', 'CLIENT :\nTNRIDC\nTAMILNADU ROAD INFRASTRU', "AUTHORITY'S ENGINEER : P\nTHEME ENGINEERI", 'ROOF CONSULTANT :\nASIA INFRASTRUCTURE\nAD', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL INFRA', 'OB No. : O24087-C-R', '', 'P TITLE : INTERCHANGE AT CH:54+281\nGENER', '', 'REV: RB']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      ... (6 more rows)
+    Table 2: 10 rows x 3 cols
+      Row 0: ['0.00\n0.25\n1.00\n2.00\n3.00\n4.00', '', '']
+      Row 1: ['5.00\n6.00\n7.50\n9.00\n10.50', '25\n18\n27\n33\n36\n37\n39', 'GREYISH SAND (SP)\nGREYISH SILTY CLAY (CH']
+      Row 2: ['12.00', '', '']
+      Row 3: ['13.50', '', '']
+      ... (6 more rows)
+    Table 3: 7 rows x 3 cols
+      Row 0: ['0.00\n0.25\n1.00\n2.00\n3.00\n4.00', '', '']
+      Row 1: ['5.00\n6.00\n7.50\n9.00\n10.50', '23\n15\n26\n30\n35', 'GREYISH BROWN SAND (SP)\nBLACKISH SILTY C']
+      Row 2: ['12.00', '38\n39', 'GREYISH BROWN SANDY CLAY (CI)']
+      Row 3: ['13.50', '', '']
+      ... (3 more rows)
+    Table 4: 4 rows x 3 cols
+      Row 0: ['0.00\n2.00\n4.00', '', '']
+      Row 1: ['5.00\n9.00\n10.50', '17\n16\n15\n21\n26', 'GREYISH SANDY CLAY (CI)\nBROWNISH GREY CL']
+      Row 2: ['12.00', '>100', 'GREYISH CLAYEY SAND WITH\nSANDSTONE FRAGM']
+      Row 3: ['', '', '']
+    Table 5: 6 rows x 3 cols
+      Row 0: ['0.00\n1.00\n2.00\n3.00\n4.00', '', '']
+      Row 1: ['5.00\n6.00\n7.50\n9.00\n10.50', '17\n14\n15\n21\n28', 'BROWNISH SAND (SP)\nGREYISH CLAYEY SAND (']
+      Row 2: ['12.00', '30\n44', 'GREYISH CLAYEY SAND (SC)']
+      Row 3: ['13.50', '', '']
+      ... (2 more rows)
+    Table 6: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 7: 13 rows x 2 cols
+      Row 0: ['3.00\n4.00\n5.00\n6.00\n7.50\n9.00', '16\n11\n17\n10\n10\n10']
+      Row 1: ['10.50', '16']
+      Row 2: ['12.00', '29']
+      Row 3: ['13.50', '>100']
+      ... (9 more rows)
+    Table 8: 5 rows x 2 cols
+      Row 0: ['18\n19\n20\n25\n28\n31', 'BROWNISH CLAYEY SAND (SC)\nBROWNISH SILTY']
+      Row 1: ['33', 'GREYISH BROWN SANDY CLAY (CI)']
+      Row 2: ['35\n40', 'BROWNISH GREY CLAYEY SAND\nWITH CALCAREOU']
+      Row 3: ['>100', 'BROWNISH SILTY SAND WITH\nSANDSTONE FRAGM']
+      ... (1 more rows)
+    Table 9: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 10: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 11: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 12: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 13: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['1.00\n2.00\n3.00\n4.00', '10\n11', 'FILLED UP SOIL\nBROWNISH SAND (SP)\nBROWNI']
+      Row 3: ['5.00\n6.00\n7.50\n9.00\n10.50', '21\n24\n27\n30\n24', 'BROWNISH SILTY SAND (SM)\nBROWNISH GREY C']
+      ... (4 more rows)
+    Table 14: 8 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['2.00\n3.00\n4.00', '6\n13\n16', 'BROWNISH SILTY SAND (SM)\nWELL GRADED-SIL']
+      Row 3: ['5.00\n6.00\n7.50\n9.00\n12.00', '11\n12\n16\n15\n27\n37\n66', 'GREYISH SILTY SAND (SP-SM)\nWELL GRADED-S']
+      ... (4 more rows)
+    Table 15: 9 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '3', 'BROWNISH CLAYEY SAND (SC)']
+      Row 3: ['1.00\n2.00\n3.00\n4.00', '7\n9\n11\n14', 'BROWNISH SILTY SAND (SM)\nBROWNISH SILTY ']
+      ... (5 more rows)
+    Table 16: 7 rows x 3 cols
+      Row 0: ['DEPTH (m)', '', '']
+      Row 1: ['0.00', '', '']
+      Row 2: ['0.25', '4\n6\n12\n21\n19', 'BROWNISH GREY CLAYEY SAND (SC)\nBROWNISH ']
+      Row 3: ['1.00\n2.00\n3.00\n4.00', '', '']
+      ... (3 more rows)
+    Table 17: 6 rows x 2 cols
+      Row 0: ['12\n11\n14\n17\n25\n33', 'BROWNISH CLAYEY SAND (SC)\nBROWNISH SILTY']
+      Row 1: ['39', 'BROWNISH GREY CLAYEY SAND WITH\nCALCAREOU']
+      Row 2: ['35', 'BROWNISH GREY SANDY CLAY (CI)']
+      Row 3: ['37', 'BROWNISH GREY CLAYEY SAND (SC)']
+      ... (2 more rows)
+    Table 18: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 19: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 20: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 21: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 22: 3 rows x 3 cols
+      Row 0: ['21.00', '89', '']
+      Row 1: ['', '', 'BROWN CLAYEY SAND (SC)']
+      Row 2: ['22.50', '>100', '']
+    Table 23: 1 rows x 2 cols
+      Row 0: ['45.00', '']
+    Table 24: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+
+================================================================================
+PDF: GAD 1 (2) 1.pdf (3.8 MB)
+================================================================================
+Pages: 4
+
+  Page 0: 1684x1191, type=TEXT-RICH, text_chars=6461, images=5, drawings=33525
+    Keywords: pier, easting, northing, coordinate, rhs, lhs, chainage, foundation, general arrangement
+    Text preview: 54+100 | 54+200 | 30000 | 30000 | 30000 | 30000 | 30000 | 30000 | 30000 | 18550 | 2950 | 18550 | 525 | 525 | 15050 | 2950 | 15050 | P01 | P02 | P03 | P04 | P05 | P06 | P07 | P08 | P09 | P10 | P11 | P12 | P13 | P14 | P15 | P16 | P17 | P18 | P19 | P20 | P21 | P22 | P23 | P24 | P25 | P26 | P27 | P28 | P29 | P30 | P31 | P32 | P33 | P34 | P35 | P36 | P37 | P38 | P39 | P40 | P41 | P42 | P43 | P44 | P45 | P46 | P47 | P48 | P49 | P50 | P51 | P52 | P53 | P54 | P55 | P56 | P57 | P58 | P59 | P60 | P61 | P62 | P63 | P64 | P65 | P66 | P133 | P134 | P135 | P136 | P137 | P138 | P139 | P140 | P141 | P142 | P143 | P144 | P145 | P146 | P147 | P148 | P149 | P150 | P151 | P152 | P153 | P154 | P155 | P156 | P157 | P158 | P159 | P16
+
+  Page 1: 1684x1191, type=TEXT-RICH, text_chars=6484, images=5, drawings=33460
+    Keywords: pier, easting, northing, coordinate, rhs, lhs, chainage, foundation, general arrangement
+    Text preview: 54+300 | 54+400 | 54+500 | 30000 | 30000 | 30000 | 30000 | 30000 | 30000 | 30000 | 2950 | 15050 | 15050 | P67 | P68 | P69 | P70 | P71 | P72 | P73 | P74 | P75 | P76 | P77 | P78 | P79 | P80 | P81 | P82 | P83 | P84 | P85 | P86 | P87 | P88 | P89 | P90 | P91 | P92 | P93 | P94 | P95 | P96 | P97 | P98 | P99 | P100 | P101 | P102 | P103 | P104 | P105 | P106 | P107 | P108 | P109 | P110 | P111 | P112 | P113 | P114 | P115 | P116 | P117 | P118 | P119 | P120 | P121 | P122 | P123 | P124 | P125 | P126 | P127 | P128 | P129 | P130 | P131 | P132 | P199 | P200 | P201 | P202 | P203 | P204 | P205 | P206 | P207 | P208 | P209 | P210 | P211 | P212 | P213 | P214 | P215 | P216 | P217 | P218 | P219 | P220 | P221 | P222 | P22
+
+  Page 2: 1684x1191, type=TEXT-RICH, text_chars=5596, images=5, drawings=24431
+    Keywords: pier, easting, northing, coordinate, loop, chainage, foundation, general arrangement
+    Text preview: 20000 | 20000 | 20000 | 20000 | 20000 | 20000 | 30000 | 30000 | ENTRY RAMP / LOOP - 1 | P09 | P10 | P14 | P15 | P18 | P19 | P23 | P24 | L01 | L02 | L03 | L04 | L05 | L06 | L07 | L08 | L09 | L10 | L11 | L12 | L13 | L14 | L15 | L16 | L17 | L18 | L19 | L20 | L21 | L22 | L23 | L24 | L25 | L26 | L27 | L28 | L29 | L30 | L31 | L32 | L33 | L34 | L35 | L36 | L37 | L38 | L39 | L40 | L41 | L42 | L43 | L44 | L45 | L46 | L47 | L48 | L49 | L50 | L51 | L52 | L53 | L54 | L55 | L56 | 20000 | 20000 | 20000 | 20000 | 20000 | 20000 | 30000 | 30000 | 30000 | 50 | EXIT RAMP / LOOP - 2 | 9 | P102 | P103 | P106 | P107 | P108 | P109 | P110 | P111 | P112 | P113 | L57 | L58 | L59 | L60 | L61 | L62 | L63 | L64 | L65 | L66 | L67 | 
+
+  Page 3: 1684x1191, type=TEXT-RICH, text_chars=5840, images=5, drawings=25749
+    Keywords: pier, easting, northing, coordinate, loop, chainage, foundation, general arrangement
+    Text preview: 54+4 | 20000 | 20000 | 20000 | 20000 | 20000 | 20000 | 1 | ENTRY RAMP / LOOP - 3 | P229 | P230 | P231 | P232 | P233 | 34 | P235 | P236 | P237 | P238 | P239 | P240 | P241 | P242 | P243 | P244 | P245 | P246 | L114 | L115 | L116 | L117 | L118 | L119 | L120 | L121 | L122 | L123 | L124 | L125 | L126 | L127 | L128 | L129 | L130 | L131 | L132 | L133 | L134 | L135 | L136 | L137 | L138 | L139 | L140 | L141 | L142 | L143 | L144 | L145 | L146 | L147 | L148 | L149 | L150 | L151 | L152 | L153 | L154 | L155 | L156 | L157 | L158 | L159 | L160 | L161 | L162 | L163 | L164 | L165 | L166 | L167 | L168 | L169 | 20000 | 20000 | 20000 | 20000 | 20000 | 20000 | EXIT RAMP / LOOP - 4 | P141 | P142 | 
+
+  --- pdfplumber table analysis ---
+  Page 0: 10 table(s)
+    Table 0: 1 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+    Table 1: 14 rows x 14 cols
+      Row 0: ['', 'L\n0\n1\nL\n0\n6\nL\n525 0\nL2\n0\nL3\n0\n7 P33 P34 ', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 1: ['', '', '', '', '', '', '', '', '5', '', '', '', '', '']
+      Row 2: ['P15 P23', '', 'P34\nP44\nP30\nP39', '', '', '', 'P45\nP40\n0', '', 'P53\nP49', '', 'P54\nP50', '', 'P64\nP59', 'P65\nP60']
+      Row 3: ['P10 P18', '', '', 'P31 P38', '', '', '', '5581 P41', 'P48', '', '', 'P51', 'P58', '']
+      ... (10 more rows)
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 4: 32 rows x 4 cols
+      Row 0: ['RHS CARRIAGE WAY COORDINATES', '', '', '']
+      Row 1: ['PIER', 'POINTS', 'EASTING (X)', 'NORTHING (Y)']
+      Row 2: ['P5', 'P169', '385952.21', '1452308.46']
+      Row 3: ['', 'P170', '385955.15', '1452307.863']
+      ... (28 more rows)
+    Table 5: 5 rows x 1 cols
+      Row 0: ['PIER']
+      Row 1: ['A1']
+      Row 2: ['P1']
+      Row 3: ['P2']
+      ... (1 more rows)
+    Table 6: 37 rows x 2 cols
+      Row 0: ['POINTS', 'EASTING (X)']
+      Row 1: ['P133', '385982.101']
+      Row 2: ['P134', '385981.559']
+      Row 3: ['P135', '385977.92']
+      ... (33 more rows)
+    Table 7: 5 rows x 10 cols
+      Row 0: ['', '', '', '', '', '', '', "CLIENT : AUTHORITY'S ENGI\nTNRIDC\nTH\nTAMI", 'NEER : PROOF CONSULTANT :\nASIA INFRASTRU', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL INFRA']
+      Row 1: ['', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '']
+      ... (1 more rows)
+    Table 8: 4 rows x 3 cols
+      Row 0: ['JOB No. : O24087-', 'C-RP TITLE : INTERCHANGE AT CH:54+281\nFO', 'REV: RB']
+      Row 1: ['DESIGNED SRR', '', 'SIZE: A2']
+      Row 2: ['DRAWN SRA', '', '']
+      Row 3: ['CHECKED ARS\nAPPROVED NKC', 'DRAWING NO :\nO 2 4 0 8 7 - C - R P - M B', '']
+    Table 9: 1 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+  Page 1: 8 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 23 rows x 14 cols
+      Row 0: ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 1: ['', '30000 30000 30000\n1\n6\nL\n7\n5\nL\n0\n6\nL4\n6\nP', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', 'P73', 'P83', '', 'P93', '', '', '', '', '', '', '', '', '']
+      ... (19 more rows)
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 4: 40 rows x 3 cols
+      Row 0: ['IER', 'POINTS', 'EASTING (X)']
+      Row 1: ['P8', 'P67', '385955.348']
+      Row 2: ['', 'P68', '385958.288']
+      Row 3: ['', 'P69', '385961.228']
+      ... (36 more rows)
+    Table 5: 28 rows x 3 cols
+      Row 0: ['PIER', 'POINTS', 'EASTING (X)']
+      Row 1: ['P13', 'P106', '385930.117']
+      Row 2: ['', 'P107', '385935.213']
+      Row 3: ['', 'P108', '385934.615']
+      ... (24 more rows)
+    Table 6: 5 rows x 7 cols
+      Row 0: ['', '', '', '', '', '', '']
+      Row 1: ['', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '']
+      ... (1 more rows)
+    Table 7: 4 rows x 9 cols
+      Row 0: ['', '', "AUTHORITY'S ENGINEER : PR\nTHEME ENGINEER", 'OOF CONSULTANT : SAFETY CONSULT\nASIA INF', 'ANT :\nJOB No. : O24087-C-RP TITLE\nONDZ G', '', 'JOB No. : O24087-C-RP TITLE\nDESIGNED SRR', ': INTERCHANGE AT CH:54+281\nFOUNDATION LA', 'REV: RB']
+      Row 1: ['', '', '', '', '', '', '', '', 'SIZE: A2']
+      Row 2: ['', '', '', '', '', '', 'CHECKED ARS DRAW\nAPPROVED NKC O 2', 'ING NO :\n4 0 8 7 - C - R P - M B - N U -', '']
+      Row 3: ['', '', '', '', '', '', '', '', '']
+  Page 2: 7 table(s)
+    Table 0: 1 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+    Table 1: 57 rows x 4 cols
+      Row 0: ['LOOP-1 COORDINATES', '', '', '']
+      Row 1: ['PIER', 'POINTS', 'EASTING (X)', 'NORTHING (Y)']
+      Row 2: ['1P1', 'L01', '386001.116', '1452357.225']
+      Row 3: ['', 'L02', '385998.979', '1452354.083']
+      ... (53 more rows)
+    Table 2: 56 rows x 2 cols
+      Row 0: ['POINTS', 'EASTING (X)']
+      Row 1: ['L57', '385953.244']
+      Row 2: ['L58', '385954.025']
+      Row 3: ['L59', '385950.307']
+      ... (52 more rows)
+    Table 3: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 4: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 5: 6 rows x 7 cols
+      Row 0: ['', "CLIENT : AUTHORITY'S ENGINEER : PROOF CO", '', "AUTHORITY'S ENGINEER : PROOF CONSULTANT ", 'SAFETY CONSULTANT :\nASTRUCTURE ALMONDZ G', '', '']
+      Row 1: ['', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '']
+      ... (2 more rows)
+    Table 6: 4 rows x 3 cols
+      Row 0: ['JOB No. : O24087-', 'C-RP TITLE : INTERCHANGE AT CH:54+281 R\n', 'EV: RB']
+      Row 1: ['DESIGNED SRR', '', 'IZE: A2']
+      Row 2: ['DRAWN SRA', '', '']
+      Row 3: ['CHECKED ARS\nAPPROVED NKC', 'DRAWING NO :\nO 2 4 0 8 7 - C - R P - M B', '']
+  Page 3: 6 table(s)
+    Table 0: 1 rows x 4 cols
+      Row 0: ['', '', '', '']
+    Table 1: 58 rows x 4 cols
+      Row 0: ['LOOP-3 COORDINATES', '', '', '']
+      Row 1: ['PIER', 'POINTS', 'EASTING (X)', 'NORTHING (Y)']
+      Row 2: ['3P1', 'L114', '385911.026', '1452134.696']
+      Row 3: ['', 'L115', '385908.888', '1452131.554']
+      ... (54 more rows)
+    Table 2: 57 rows x 3 cols
+      Row 0: ['POINTS', 'EASTING (X)', 'NORTHING (Y)']
+      Row 1: ['L170', '385956.561', '1452367.651']
+      Row 2: ['L171', '385957.342', '1452363.933']
+      Row 3: ['L172', '385953.624', '1452363.151']
+      ... (53 more rows)
+    Table 3: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 4: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 5: 9 rows x 11 cols
+      Row 0: ['', '', '', "CLIENT : AUTHORITY'S ENGINEER : PROOF CO", '', "AUTHORITY'S ENGINEER : PROOF CONSULTANT ", 'ETY CONSULTANT :\nJOB No. : O24087-C\nALMO', '', 'JOB No. : O24087-C', '-RP TITLE : INTERCHANGE AT CH:54+281 R\nF', 'EV: RB']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', 'DESIGNED SRR', '', 'IZE: A2']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+      ... (5 more rows)
+
+================================================================================
+PDF: MCW P&P 1.pdf (3.2 MB)
+================================================================================
+Pages: 3
+
+  Page 0: 1684x1191, type=TEXT-RICH, text_chars=10137, images=15, drawings=21977
+    Keywords: datum, rhs, lhs, carriageway, chainage, mcw
+    Text preview: Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | 53+000 | 53+100 | 53+200 | 53+300 | 53+400 | 53+500 | 53+600 | 53+700 | 53+800 | 53+900 | 54+000 | PC 53+068.601 | PT 53+373.941 | TS 53+471.121 | SC 53+611.121 | 54+012.955 |   | MATCHLINE | MATCHLINE | PROPOSAL | Str. No | CA CHAINAGE | NEW CHAINAGE | BOX CULVERT | 1 x 2m x 2m | 53+020 | 54/1 | 53+016 | PROPOSAL | Str. No | CA CHAINAGE | NEW CHAINAGE | BOX CULVERT | 1 x 2m x 2m | 53+519 | 54/3 | 5
+
+  Page 1: 1684x1191, type=TEXT-RICH, text_chars=9591, images=49, drawings=64372
+    Keywords: datum, rhs, lhs, carriageway, chainage, mcw
+    Text preview: 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | FINISHED ROAD LEVELS | @ LEFT MEDIAN EDGE | LHS | RHS | EXISTING LEVEL | VERTICAL SCHEMATIC | FINISHED ROAD LEVELS | @ RIGHT MEDIAN EDGE | VERTICAL SCHEMATIC | GROUND @ 30M ON LHS | OF MEDIAN CENTER LINE | EXISTING GROUND BELOW | CENTERLINE LEVEL | GROUND @ 30M ON RHS | OF MEDIAN CENTER LINE | HORIZONTAL SCHEMATIC | DESIGN CHAINAGE | SUPERELEVATION | LHS | RHS | SCHEMATIC | VERTICAL SCHEMATIC | VERTICAL SCHEMATIC | PROPOSAL | Str. No | CA CHAINAGE | NEW CHAINAGE | BOX CULVERT | 1 x 2m x 2m | 54+040 | 
+
+  Page 2: 1684x1191, type=TEXT-RICH, text_chars=9817, images=38, drawings=34444
+    Keywords: datum, rhs, lhs, carriageway, chainage, mcw
+    Text preview: Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Water Logged Area | Water Logged Area | Water Logged Area | HT Line | HT Line | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Agriculture_Land | Water Logged Area | Water Logged Area | Water Logged Area | HT Line | HT Line | 55+000 | 55+100 | 55+600 | 55+700 | 55+800 | 55+900 | 56+000 | TS 54+970.773 | SC 55+060.773 | CS 55+970.664 | 56+060.664 | MATCHLINE | MATCHLINE | R (m) | Dc(deg) | Lc(m) | Ts(m) | S(m) | Ts(deg) | Δ(deg) | e(%) | Ls (m) | V (Kmph) | 9
+
+  --- pdfplumber table analysis ---
+  Page 0: 7 table(s)
+    Table 0: 1 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+    Table 1: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 32 rows x 56 cols
+      Row 0: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'FRL @', '', 'LEFT', '& RIGHT', 'MEDIA', 'N EDG', 'E', '', '', '', '', 'BOX C', 'ULVERT', '', '', '', '', '', '', '', '', '', 'MINO', 'R BRID', '', 'GE', '', '+ C 9\n4 T 2.\n5 A 1', 'S\nC', 'PRO', 'W']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', 'B', '', 'OX CU', 'LVERT', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'SR FR\nSR FR', '', 'L (LHS)\nL (RHS', '@ INN\n) @ INN', 'ER EDG\nER EDG', 'E\nE', '', '', '', 'Str. N\nCA C', '', 'o\nHAI', '', '54/\n53', '', '3\n+519', '', '', '', '', '', 'Str\nCA', '. No\nCHAIN', 'AGE', '', '54/4\n53+79', '0', 'M 0 E\n+ N :\nR :', 'P\n3 8 -1 0', 'W', '']
+      Row 3: ['', '', '', '', 'Str. No\nCA CH', '', 'AINAGE', '', '54/1\n53+0', '20', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'EXIST', '', 'ING GR', 'OUND B', 'ELOW', 'CENTE', 'RLINE', '', '', 'NEW', '', 'NAG\nCHAINA', 'E\nGE', '53', '', '+516', '', '', '', '', '', 'NE', 'W CHAI', 'NAGE', '', '53+78', '0', '4\nS 5 L : 4 1 4 5', '5 9 8 PR O\nV2PI3 653+9', '10.114', '']
+      ... (28 more rows)
+    Table 4: 4 rows x 11 cols
+      Row 0: ['', '', '', '', '', '', '', 'CLIENT :\nTNRIDC\nTAMILNADU ROAD INFRASTRU', "AUTHORITY'S ENGINEER :\nTheme Engineering", 'PROOF CONSULTANT :\nASIA INFRASTRUCTURE\nA', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL INFRA']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+    Table 5: 3 rows x 2 cols
+      Row 0: ['E :\nMAIN CARRIAGEWAY PLAN & PROFILE\nFROM', 'REV:0']
+      Row 1: ['', 'SIZE: A2']
+      Row 2: ['WING NO :', '']
+    Table 6: 1 rows x 5 cols
+      Row 0: ['', '', '', '', '']
+  Page 1: 5 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', 'W', 'ggooLL\nrr', 'eeggggoo', '', '']
+    Table 1: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 33 rows x 31 cols
+      Row 0: ['', '', '', '', '', '', '', '', '', '', '', '', 'T\no', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 1: ['', '', '', 'BOX CULVERT', '', '', '', '', '', 'INTERCH', 'ANGE', 'P', 'LAN\nT\nh\nir', 'MAJOR', '', 'BRID', '', 'GE', '', '', '', '', 'BOX CULVERT', '', '', '', 'BOX C', 'ULVERT', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', 'Str. No 55/1\nCA CHAINAGE 54+040', '', '', '', '', 'Str.\nCA', 'No\nCHAINAGE', '55/2\n54+290', '(SCA', 'u Str.\nLE = 1:2500v a)\nllu CA', 'No\nCHAINAG', '', 'E', '5\n5', '5/3\n4+567', '', '', '', 'Str. N', 'o 55/4\nHAINAGE 54+677', '', '', '', 'Str. No\nCA CHAINAG', '55/5\nE 54+927', '', '', '']
+      ... (29 more rows)
+    Table 4: 7 rows x 10 cols
+      Row 0: ['', '', '', "CLIENT : AUTHORITY'S ENGINEER : PROOF\nTN", "AUTHORITY'S ENGINEER : PROOF\nCTURE\nION\nT", 'CONSULTANT : SA\nASIA INFRASTRUCTURE\nADVI', 'FETY CONSULTANT :\nALMONDZ GLOBAL INFRA\n-', 'JOB No. :\nO24087 - C\nDESIGNED VN\nDRAWN S', 'TITLE :\n- RP\nMAIN CARRIAGEWAY PLAN & PRO', 'REV:0']
+      Row 1: ['', '', '', '', '', '', '', '', '', 'SIZE: A2']
+      Row 2: ['', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', 'ACTOR : DES\nL&T Construction\nTransportat', '', '', '', '']
+      ... (3 more rows)
+  Page 2: 7 table(s)
+    Table 0: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
+    Table 1: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 2: 4 rows x 1 cols
+      Row 0: ['']
+      Row 1: ['']
+      Row 2: ['']
+      Row 3: ['']
+    Table 3: 33 rows x 63 cols
+      Row 0: ['', '', '', '', '', '', '', '', '', '', '', '', '2+5 14.', '', '', '', '', '', '', '', '', '', '', '', '', 'PROPO', '', '', 'SAL', '', '(', '7x30)', '+(1x76', ')+(2x3', '0) - MCW', '', 'NE', '', 'W CHAI', 'NAG', 'E', '55+491', '', '', '', '', '', '', '', '', '', '', '', '', 'BO', 'X CULVERT', '', 'r', '5', '', '', '6\n5', '']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '', '', '5 35\nIP\nL', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '(', '6x30)', '- SR', '', '', '', 'PR', '', 'OPOSA', 'L', '', '1 x 2m x', '', '2m\nV', 'PI 55+5', '', '47.345', '', '', '', '', '', 'S\nC', '', 'tr. No', '56/3\nAGE 55+750', '', 'u\nBOXu t l CU', 'LVERT', '', '', 'T\nS', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'A CHAIN', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '', '', 'V E', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'E', 'L 53.413', '', '', '', '', '', '', '', 'N', '', 'EW CHA', 'INAGE 55+760', 'Str.', 'No P', '56/', '4', '', '', '']
+      ... (29 more rows)
+    Table 4: 4 rows x 11 cols
+      Row 0: ['', '', '', '', '', '', '', 'CLIENT :\nTNRIDC\nTAMILNADU ROAD INFRASTRU', "AUTHORITY'S ENGINEER : P\nTheme Engineeri", 'ROOF CONSULTANT :\nASIA INFRASTRUCTURE\nAD', 'SAFETY CONSULTANT :\nALMONDZ GLOBAL INFRA']
+      Row 1: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 2: ['', '', '', '', '', '', '', '', '', '', '']
+      Row 3: ['', '', '', '', '', '', '', '', '', '', '']
+    Table 5: 3 rows x 2 cols
+      Row 0: ['TITLE :\nRP\nMAIN CARRIAGEWAY PLAN & PROFI', 'REV:0']
+      Row 1: ['', 'SIZE: A2']
+      Row 2: ['DRAWING NO :', '']
+    Table 6: 1 rows x 6 cols
+      Row 0: ['', '', '', '', '', '']
